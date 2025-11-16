@@ -1,0 +1,18 @@
+[{
+    "id":1,
+"titulo":"mito 1",
+"audio":"../audio/mito1.mp3",
+"tipo":"mito",
+"categoria":["cat1","cat2"],
+"ilustracion":"../imagenes/ilustraciones/mito1.png",
+"imagenes":["../imagenes/mito1/img1.png",1,2],
+"fraseDescriptiva":"",
+"datosCuriosos":["","",""],
+"contenido":"<p>asfdf afds adsf sadffasd</p><h3>adfdsaffds</h3>",
+"pregunta":"",
+"respuesta":"",
+"pistas":[]
+
+}
+
+]
