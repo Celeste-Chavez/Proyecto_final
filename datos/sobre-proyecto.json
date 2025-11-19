@@ -1,0 +1,35 @@
+{
+  "sobreProyecto": {
+    "titulo": "Sobre el Proyecto",
+    "nombre": "Mitos y Leyendas de La Paz",
+    "descripcion": "Este proyecto explora relatos tradicionales, historias populares y elementos culturales que forman parte de los mitos y leyendas de La Paz, presentándolos de manera accesible y visual para todo tipo de público.",
+    "objetivos": [
+      "Dar a conocer mitos y leyendas originarios de La Paz",
+      "Preservar y difundir elementos culturales tradicionales",
+      "Presentar la información de forma clara y atractiva"
+    ]
+  },
+  "creditos": {
+    "titulo": "Créditos",
+    "descripcion": "Agradecimientos a las personas, herramientas y recursos que hicieron posible este proyecto.",
+    "equipo": [
+      {
+        "nombre": "Nombre1",
+        "rol": "Desarrollador y diseñador del proyecto"
+      },
+      {
+        "nombre": "Nombre1",
+        "rol": "Desarrollador y diseñador del proyecto"
+      },
+      {
+        "nombre": "Nombre1",
+        "rol": "Desarrollador y diseñador del proyecto"
+      }
+    ],
+    "recursos": [
+      "Iconos: Recurso1",
+      "Imágenes: Recurso2",
+      "Bibliotecas o herramientas: Ninguna por el momento"
+    ]
+  }
+}
