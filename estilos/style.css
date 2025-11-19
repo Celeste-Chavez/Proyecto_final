@@ -74,7 +74,7 @@ body{
     padding:20px 30px;
     text-decoration: none;
     text-align: center;
-    font-size:var(--h5);
+    font-size:var(--h2);
     transition: 300ms all;
 }
 .boton_menu:hover{

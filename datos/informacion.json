@@ -1,13 +1,9 @@
 {
-  "Inicio": {
+  "primera-parte": {
     "img-hero": "../imagenes/img-hero.png",
-    "titular": "Sobre el Proyecto",
-    "nombre": "Mitos y Leyendas de La Paz",
-    "descripcion": "Este proyecto explora relatos tradicionales, historias populares y elementos culturales que forman parte de los mitos y leyendas de La Paz, presentándolos de manera accesible y visual para todo tipo de público.",
-    "objetivos": [
-      "Dar a conocer mitos y leyendas originarios de La Paz",
-      "Preservar y difundir elementos culturales tradicionales",
-      "Presentar la información de forma clara y atractiva"
-    ]
+    "titular": "Titular random por aqui ",
+    "categoria": "Categoria",
+    "frase-descriptiva": "frase descriptiva"
+    
   }
 }
