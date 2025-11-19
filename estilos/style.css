@@ -43,8 +43,54 @@ body{
 /* SELECTORES PARA CADA ETIQUETA TIPOGRAFICA*/
 
 
+/* DEFINICIONES GENERALES*/
+
+.contenedor{
+
+}
+
+img{
+    
+}
+
+p{
+
+}
+
+
+
+
+
 
 /* INICIO DE FOOTER */
 footer{
 
 }
+
+
+
+/*MEDIA QUERIES Y BREAKPOINTS*/
+
+
+
+/*DISPOSITIVOS MÓVILES GRANDES */
+@media (min-width:320px){
+    .contenedor{
+    }
+}
+/* TABLETS */
+@media (min-width:768px){
+    .contenedor{
+    }
+}
+/* LAPTOPS Y DESKTOP PEQUEÑAS */
+@media (min-width:1024px){
+    .contenedor{
+    }
+}
+/* DESKTOPS Y TVS GRANDES */
+@media (min-width:1280px){
+    .contenedor{
+    }
+}
+

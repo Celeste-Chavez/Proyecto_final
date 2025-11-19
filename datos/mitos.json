@@ -13,6 +13,75 @@
 "respuesta":"",
 "pistas":[]
 
+},
+
+
+{
+  "id": 2,
+  "titulo": "El Ekeko: Dios de la abundancia y la alegría",
+  "audio": "../audio/ekeko.mp3",
+  "tipo": "personaje",
+  "categoria": ["deidad", "andino"],
+  "ilustracion": "../imagenes/ilustraciones/ekeko.png",
+  "imagenes": ["../imagenes/ekeko/img-ekeko1.png","../imagenes/ekeko/img-ekeko2.png"],
+  "fraseDescriptiva": "Deidad andina que representa la abundancia, la prosperidad y la alegría.",
+  "datosCuriosos": [
+    "En la Feria de la Alasita se le ofrendan miniaturas que representan deseos personales.",
+    "Su origen se remonta a antiguas deidades de Tiwanaku relacionadas con la fertilidad y la prosperidad.",
+    "Originalmente era representado desnudo con un falo erecto como símbolo de fertilidad."
+  ],
+  "contenido": "<p>El aire vibra con la energía de la Feria de la Alasita, cada 24 de enero, cuando la ciudad de La Paz, Bolivia, despierta envuelta en un resplandor de colores, aromas y campanas diminutas. Desde el Campo Ferial del Bicentenario hasta los rincones del centro histórico, las calles se transforman en un universo de miniaturas y deseos. Artesanos y creyentes llenan el espacio con casas diminutas, billetes pequeños, alimentos en miniatura y figuras que condensan sueños humanos, mientras se realizan ofrendas y rituales que mezclan lo urbano con lo ancestral.</p>\n\n<p>En el corazón de esta celebración habita el Ekeko, el dios andino de la abundancia, la prosperidad y la alegría. A él se le ofrecen pequeñas réplicas de los anhelos personales, con la esperanza de que se vuelvan realidad bajo su sonrisa generosa. Este vínculo entre lo espiritual y lo material convierte a la feria en un espacio donde los dioses caminan entre los hombres.</p>\n\n<p>El Ekeko, conocido en aymara como Iqiqu, simboliza la fertilidad, la abundancia y el gozo de vivir. Su figura actual, regordeta y risueña, proviene de un largo proceso de transformación desde los antiguos dioses de Tiwanaku, protectores de las cosechas y la prosperidad. Con el tiempo, su imagen se convirtió en un talismán de buena fortuna, un guardián de los hogares paceños cargado de cigarrillos, monedas y esperanza.</p>\n\n<h3>La leyenda de Isidro y Paulita</h3>\n<p>En 1781, un joven indígena llamado Isidro Choquehuanca entregó una pequeña estatua del Ekeko a su amada Paulita antes de que ella viajara a La Paz, donde trabajaría bajo el resguardo de Doña Josefa Úrsula de Rojas Foronda y Don Sebastián de Segurola. Ese mismo año, la ciudad fue sitiada por fuerzas indígenas lideradas por Túpac Katari. Durante meses de escasez, Paulita nunca pasó hambre, pues Isidro, enrolado en las filas rebeldes, lograba llevarle alimento cruzando las líneas enemigas.</p>\n\n<p>Paulita, agradecida y maravillada por la abundancia que parecía acompañarla, mostró la figura del Ekeko a sus protectores españoles. Por entonces, el Ekeko era representado desnudo y con el falo erguido, símbolo de la fuerza vital y la fertilidad.</p>\n\n<p>Cuando las tropas reales rompieron el cerco y liberaron la ciudad, el gobernador Segurola decretó trasladar la feria del 20 de octubre al 24 de enero, en honor al Ekeko y a la abundancia atribuida a su intervención.</p>\n\n<h3>Transformación y presencia actual</h3>\n<p>Con el tiempo, la colonización modificó su imagen: lo vistieron y eliminaron sus símbolos sexuales. Pese a ello, el espíritu del dios sobrevivió y se adaptó a los nuevos tiempos sin perder su esencia. Hoy, en la Feria de la Alasita, se le ofrecen cigarrillos, dinero, pasaportes, autos y viviendas en miniatura, confiando en que su risa bonachona transforme los sueños en realidad.</p>\n\n<p>Así, el Ekeko continúa siendo un puente entre la historia precolombina y la vida moderna de La Paz: un dios que sonríe entre el humo del incienso y el bullicio del mercado, recordando que la abundancia también es alegría, esperanza y fe.</p>",
+  "pregunta": "",
+  "respuesta": "",
+  "pistas": []
+},
+
+
+{
+  "id": 3,
+  "titulo": "Estadio Hernando Siles (Miraflores)",
+  "audio": "",
+  "tipo": "localidad",
+  "categoria": ["estadio", "paranormal", "la_paz"],
+  "ilustracion": "",
+  "imagenes": [],
+  "fraseDescriptiva": "Un coloso paceño donde el deporte, la tragedia y lo paranormal se entrelazan.",
+  "datosCuriosos": [
+    "Es uno de los estadios más altos del mundo, ubicado a más de 3.600 metros sobre el nivel del mar.",
+    "Su historia incluye tragedias documentadas y numerosos relatos paranormales reportados por empleados y vecinos.",
+    "Una figura oscura captada por cámaras durante un partido de Copa Libertadores se volvió viral internacionalmente."
+  ],
+  "contenido": "<p>En el corazón de Miraflores se alza un coloso silencioso, un guardián de memorias antiguas: el Estadio Hernando Siles. Inaugurado en 1930, este escenario monumental no solo desafía a los equipos rivales con sus más de 3.600 metros de altitud, también guarda secretos que el viento paceño murmura cuando la noche cae sobre sus gradas.</p>\n\n<p>Más allá del deporte, el Hernando Siles es un templo cargado de historias oscuras. Hace más de medio siglo, un exceso de público provocó un derrumbe fatal, aplastando y asfixiando a decenas de personas cuyas almas, según cuentan empleados y vecinos, aún rondan el recinto. A pesar de las ofrendas y rituales con los que se intenta apaciguarlas, las energías del pasado parecen aferrarse a cada bloque de cemento.</p>\n\n<p>Otra tragedia marcó el estadio en 2007, cuando una estampida durante un partido dejó heridos y cobró la vida de una mujer. Desde entonces, muchos aseguran que la atmósfera se volvió más densa, como si la sombra del infortunio hubiera quedado suspendida entre las gradas.</p>\n\n<h3>La misteriosa desaparición de los niños</h3>\n<p>Entre todos los relatos, uno destaca por su desconcertante misterio. En 1993, la noche en que Bolivia venció por primera vez a Brasil por 2 a 0, el administrador Eduardo Flores pidió a un empleado retirar a unos niños que jugaban en la cancha. Lo que sucedió desafió toda lógica: los niños comenzaron a desvanecerse uno a uno, como humo disipándose en la oscuridad, dejando tras de sí un silencio imposible de explicar.</p>\n\n<h3>Fenómenos captados en transmisiones</h3>\n<p>La fama paranormal del estadio trascendió fronteras cuando, durante un partido de Copa Libertadores, las cámaras registraron una silueta negra moviéndose entre las gradas, atravesando cuerpos como si fueran aire. A esto se suman sonidos inexplicables, máquinas de escribir que repiquetean en plena madrugada, objetos que cambian de lugar y gritos que resuenan en gradas completamente vacías.</p>\n\n<p>Para algunos, son solo rumores. Para otros, evidencia de que el Hernando Siles está marcado por presencias que no han encontrado descanso. Como sentencia Eduardo Flores, testigo de décadas de extraños sucesos: “Esto no es un mito urbano. Es real. Esto existe.”</p>",
+  "pregunta": "",
+  "respuesta": "",
+  "pistas": []
+},
+
+
+
+
+{
+  "id": 4,
+  "titulo": "Los Cuatro Fantasmas del Cementerio General – La Paz",
+  "audio": "",
+  "tipo": "versiones",
+  "categoria": ["cementerio_general", "paranormal", "la_paz"],
+  "ilustracion": "",
+  "imagenes": [],
+  "fraseDescriptiva": "Cuatro espíritus recorren el Cementerio General de La Paz, preservando tragedias, promesas rotas y misterios que siguen vivos entre las tumbas.",
+  "datosCuriosos": [
+    "Muchos cuidadores del Cementerio General aseguran escuchar pasos, murmullos y llantos al caer la noche.",
+    "La leyenda de La Novia Blanca es una de las más antiguas y persistentes, vinculada a bodas truncadas en el siglo XIX.",
+    "El carruaje en llamas aparece siempre a las tres de la madrugada, según múltiples testimonios de guardias y vecinos."
+  ],
+  "contenido": "<p>En el corazón de la ciudad de La Paz, entre colinas empinadas y pasillos silenciosos, se alza el Cementerio General, un lugar que de día guarda memorias, flores frescas y visitas apresuradas, pero que de noche se convierte en un territorio donde el viento arrastra voces antiguas y las sombras parecen tener voluntad propia. Cuidadores y visitantes aseguran que, al caer la oscuridad, cuatro presencias permanecen en el camposanto, errantes y fieles al sitio donde dejaron su último aliento.</p>\n\n<h3>La Novia Blanca</h3>\n<p>Entre los mausoleos más antiguos, algunos han visto avanzar la figura etérea de una joven vestida con un traje de novia de encaje y un velo largo que roza el suelo. La leyenda cuenta que murió el mismo día de su boda, antes de llegar al altar, y que desde entonces camina buscando al prometido que nunca la vio llegar. Cuando alguien intenta seguirla, el aire se vuelve súbitamente más frío, impregnado de un perfume antiguo, mezcla de lirios marchitos y cera derretida. Quienes han presenciado su aparición aseguran que, al darse la vuelta, su rostro no tiene ojos, como si el destino le hubiera arrebatado incluso la posibilidad de llorar.</p>\n\n<h3>Ana Paredes – La Primera Enterrada</h3>\n<p>Dicen que Ana Paredes fue la primera persona sepultada en el Cementerio General, una ironía trágica pues en vida se opuso firmemente a su construcción. Su espíritu aparece siempre de negro, con un sombrero ancho y un rostro cadavérico iluminado por la tenue luz nocturna. Se la suele ver de pie junto a la verja principal, observando en silencio. Nunca entra ni sale; simplemente mira, como si vigilara la paz que no le fue concedida en vida y que ahora parece custodiar desde el límite entre lo visible y lo invisible.</p>\n\n<h3>El Cura del Mausoleo Ascarrunz</h3>\n<p>A medianoche, cuando los pasillos del cementerio parecen interminables, algunos guardias han visto avanzar la figura de un cura con sotana negra. En vida dio extremaunción a los más humildes y fue encontrado muerto dentro de una cripta, aferrado a un rosario. Su espíritu camina lentamente entre las tumbas, murmurando oraciones que se confunden con el silbido del viento. A veces parece llorar. Se lo ha visto inclinarse junto a sepulcros recientes, rezando por las almas recién llegadas… aunque nadie sabe si implora por ellas o por su propia condena.</p>\n\n<h3>El Carruaje en Llamas</h3>\n<p>El más temido de los relatos habla de un carruaje antiguo envuelto en llamas que atraviesa el cementerio exactamente a las tres de la madrugada. Sus ruedas no producen sonido alguno, pero su luz incandescente se refleja sobre las lápidas como un presagio ardiente. Dentro del carruaje se distingue la silueta de un hombre sin rostro, quieto e inexpresivo. Algunos creen que es un alma castigada, condenada a vagar eternamente; otros juran que es un recordatorio del infierno, una advertencia para quienes osan profanar el descanso de los muertos.</p>\n\n<p>Así, entre sombras, susurros y relatos transmitidos al filo de la noche, el Cementerio General guarda más que tumbas y fechas: protege historias que se niegan a morir, memorias que aún caminan y presencias que recuerdan que incluso en la ciudad de los muertos, la frontera entre vivos y espíritus es sorprendentemente delgada.</p>",
+  "pregunta": "",
+  "respuesta": "",
+  "pistas": []
 }
 
+  
 ]
+
+
+
