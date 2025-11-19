@@ -37,35 +37,80 @@
 }
 
 body{
-    background-color: var(--color_1); /* agregar el color*/
+    background-color: var(--color_4); /* agregar el color*/
     font-family: "","";  /*agregar tipografia*/
 }
 /* SELECTORES PARA CADA ETIQUETA TIPOGRAFICA*/
 
+/* INICIO MODULARIZACION*/
 
-/* DEFINICIONES GENERALES*/
+/* FIN MODULARIZACION*/
 
-.contenedor{
-
+/* INICIO HEADER*/
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color:var(--color_2);
+}
+.header_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-img{
-    
+.menu_nav_ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-
-p{
-
+.boton_menu{
+    background-color: var(--azul);
+    padding:20px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size:var(--h5);
+    transition: 300ms all;
 }
+.boton_menu:hover{
+    background-color: var(--celeste);
+    color: var(--azul);
+}
+/* FIN HEADER*/
 
+/* INICIO INDEX*/
+/* FIN INDEX*/
 
+/* INICIO  LEYENDAS*/
+/* FIN LEYENDAS*/
 
+/* INICIO  MITOS*/
+/* FIN MITOS*/
 
+/* INICIO MI COLECCION*/
+/* FIN MI COLECCION*/
 
+/* INICIO  PERFIL*/
+/* FIN PERFIL*/
+
+/* INICIO  SOBRE EL PROYECTO*/
+/* FIN SOBRE EL PROYECTO*/ 
+
+/* INICIO  CREDITOS*/
+/* FIN CREDITOS*/
 
 /* INICIO DE FOOTER */
 footer{
 
 }
+/* FIN FOOTER*/
+
+
 
 
 
