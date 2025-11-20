@@ -40,18 +40,23 @@ async function cargarLeyenMito() {
     const respuesta = await fetch(URL_LeyendaMito);
     const data = await respuesta.json();
 
-    // Acceder correctamente al array
+    // Leyendas Místicas
     const primer = data["leyendas-misticas"][0];
+    document.getElementsByClassName('titulo-mistica')[0].textContent = primer.titulo;
+    document.getElementsByClassName('masa-texto-mistica')[0].textContent = primer["masa-texto"];
+    document.getElementsByClassName('imagenLM-mistica')[0].src = primer["img-leyenda"];
 
-    // Obtener elementos (primer elemento de la clase)
-    const tituloEl = document.getElementsByClassName('titulo')[0];
-    const textoEl = document.getElementsByClassName('masa-texto')[0];
-    const imagenEl = document.getElementsByClassName('imagenLM')[0];
+    // Leyendas Sagradas
+    const segundo = data["leyendas-sagradas"][0]; // índice 0
+    document.getElementsByClassName('titulo-sagrada')[0].textContent = segundo.titulo;
+    document.getElementsByClassName('masa-texto-sagrada')[0].textContent = segundo["masa-texto"];
+    document.getElementsByClassName('imagenLM-sagrada')[0].src = segundo["img-leyenda"];
 
-    // Asignar contenido
-    tituloEl.textContent = primer.titulo;
-    textoEl.textContent = primer["masa-texto"];
-    imagenEl.src = primer["img-leyenda"];
+    // Leyendas Historicas
+    const tercer = data["leyendas-historicas"][0]; 
+    document.getElementsByClassName('titulo-historicas')[0].textContent = tercer.titulo;
+    document.getElementsByClassName('masa-texto-historicas')[0].textContent = tercer["masa-texto"];
+    document.getElementsByClassName('imagenLM-historicas')[0].src = tercer["img-leyenda"];
 
   } catch (error) {
     console.error("Error al cargar la información:", error);
@@ -59,6 +64,7 @@ async function cargarLeyenMito() {
 }
 
 document.addEventListener("DOMContentLoaded", cargarLeyenMito);
+
 
 
 

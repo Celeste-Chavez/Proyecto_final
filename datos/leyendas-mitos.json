@@ -2,21 +2,21 @@
   "leyendas-misticas": [
     {
       "titulo": "Leyendas Misticas",
-      "masa-texto": "Titular random por aqui",
+      "masa-texto": "Titu",
       "img-leyenda": "../imagenes/img-leyendas.png"
     }
   ],
   "leyendas-sagradas": [
     {
       "titulo": "Leyendas Sagradas",
-      "masa-texto": "Titular random por aqui",
+      "masa-texto": "Titular sdfsdfsi",
       "img-leyenda": "../imagenes/img-leyendas.png"
     }
   ],
   "leyendas-historicas": [
     {
       "titulo": "Leyendas Historicas",
-      "masa-texto": "Titular random por aqui",
+      "masa-texto": "Titular random ",
       "img-leyenda": "../imagenes/img-leyendas.png"
     }
   ]
