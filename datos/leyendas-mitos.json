@@ -19,5 +19,28 @@
       "masa-texto": "Titular random ",
       "img-leyenda": "../imagenes/img-leyendas.png"
     }
+  ],
+
+  "mitos-misticos": [
+    {
+      "titulo": "Mitos Místicos",
+      "masa-texto": "Relatos que mezclan magia, rituales y sucesos imposibles.",
+      "img-leyenda": "../imagenes/mitos-misticos.jpg"
+    }
+  ],
+  "mitos-sagrados": [
+    {
+      "titulo": "Mitos Sagrados",
+      "masa-texto": "Historias de origen y deidades veneradas por antiguas civilizaciones.",
+      "img-leyenda": "../imagenes/mitos-sagrados.jpg"
+    }
+  ],
+  "mitos-historicos": [
+    {
+      "titulo": "Mitos Históricos",
+      "masa-texto": "Narraciones que mezclan hechos reales con interpretaciones legendarias.",
+      "img-leyenda": "../imagenes/mitos-historicos.jpg"
+    }
   ]
+  
 }
