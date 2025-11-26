@@ -10,8 +10,8 @@
     /*Paleta de colores*/ 
     --color_1:#452829; /* cambiar colores*/
     --color_2:#57595B;
-    --color_3:#F3E8DF;
-    --color_4:#E8D1C5;
+    --color_3:#F3E8DF; 
+    --color_4:#E8D1C5;   /* Beige*/
     --color_5:#960018;
 
     /*Paleta de colores neo andinos*/ 
@@ -24,13 +24,14 @@
     --color-neo_6:#F6F6F6;
     
 
-    --padding-1:px;
-    --padding-2:px; 
-    --padding_6:px;   
-    --padding_3:px;
-    --padding_4:px;   
-    --padding_5:px;     
-    --gap-1:px;
+    --padding-1: 8px;   /* pequeño */
+    --padding-2: 12px;  /* medio pequeño */
+    --padding_6: 16px;  /* medio */
+    --padding_3: 20px;  /* medio amplio */
+    --padding_4: 24px;  /* amplio */
+    --padding_5: 32px;  /* muy amplio */
+    --gap-1: 20px;      /* separación estándar para layouts */
+
 
     /*Escala tipografica*/
 
@@ -147,8 +148,18 @@
 }
 
 body{
-    background-color: var(--color_3); /* agregar el color*/
+    background-color: var(--color_4); /* agregar el color*/
     font-family: 'IBM Plex Mono';  /*agregar tipografia*/
+}
+
+img{
+    display: block;
+    width: 100%;
+    background-color: var(--color-neo_3);
+    min-width: 300px;
+    min-height: 300px;
+    margin-bottom: var(--padding-1);
+    
 }
 /* SELECTORES PARA CADA ETIQUETA TIPOGRAFICA*/
 
@@ -198,6 +209,34 @@ body{
 
 /* INICIO  LEYENDAS*/
 /* FIN LEYENDAS*/
+
+
+/* INICIO  LEYENDAS Y MITOS */
+
+
+
+/* Caja interna con imagen + texto + link */
+.caja {
+    display: flex;
+    gap: var(--gap-1);
+}
+
+.caja a {
+  
+}
+
+/* Imagen a la derecha */
+.imagenLM {
+    display: inline;
+    width: 300px;
+}
+
+
+
+
+/* FIN LEYENDAS Y MITOS */
+
+
 
 /* INICIO  MITOS*/
 /* ====== SECCIONES MITOS (TEXTO + IMAGEN) ====== */
