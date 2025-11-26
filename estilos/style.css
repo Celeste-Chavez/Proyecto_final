@@ -147,7 +147,7 @@
 }
 
 body{
-    background-color: var(--color_4); /* agregar el color*/
+    background-color: var(--color_3); /* agregar el color*/
     font-family: 'IBM Plex Mono';  /*agregar tipografia*/
 }
 /* SELECTORES PARA CADA ETIQUETA TIPOGRAFICA*/

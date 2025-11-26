@@ -154,9 +154,9 @@ inputImagen.addEventListener('change', () => {
 
 
 // Sobre proyecto
-const URL_PROY = '../datos/sobre-proyecto.json'; 
+//const URL_PROY = '../datos/sobre-proyecto.json'; 
 
-async function cargarProyecto() {
+/*async function cargarProyecto() {
   try {
     const respuesta = await fetch(URL_PROY);
     const data = await respuesta.json();
@@ -178,14 +178,40 @@ async function cargarProyecto() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", cargarProyecto);*/
+
+const URL_PROY = '../datos/sobre-proyecto.json';
+
+async function cargarProyecto() {
+  try {
+    const respuesta = await fetch(URL_PROY);
+    const data = await respuesta.json();
+
+    // Obtenemos los datos del proyecto
+    const proy = data.sobreProyecto;
+
+    // Referencia al contenedor existente
+    const seccion = document.getElementById('sobre-proyecto');
+
+    // Modificamos directamente los elementos existentes
+    seccion.querySelector('h1').textContent = proy.titulo;
+    seccion.querySelector('h2').textContent = proy.nombre;
+    seccion.querySelector('p').textContent = proy.descripcion;
+
+  } catch (error) {
+    console.error("Error al cargar el proyecto:", error);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", cargarProyecto);
+
 
 
 
 // Creditos
 //const URL_PROY = '../datos/sobre-proyecto.json'; 
 
-async function cargarCreditos() {
+/*async function cargarCreditos() {
   try {
     const respuesta = await fetch(URL_PROY);
     const data = await respuesta.json();
@@ -206,4 +232,29 @@ async function cargarCreditos() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", cargarCreditos);*/
+
+//const URL_PROY = '../datos/sobre-proyecto.json';
+
+async function cargarCreditos() {
+  try {
+    const respuesta = await fetch(URL_PROY);
+    const data = await respuesta.json();
+
+    // Tomamos el objeto de créditos
+    const proy = data.creditos;
+
+    // Referencia al contenedor
+    const seccion = document.getElementById('creditos');
+
+    // Insertamos el título y descripción directamente
+    seccion.querySelector('h2').textContent = proy.titulo;
+    seccion.querySelector('p').textContent = proy.descripcion;
+
+  } catch (error) {
+    console.error("Error al cargar los créditos:", error);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", cargarCreditos);
+
