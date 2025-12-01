@@ -206,24 +206,23 @@ img{
 
 /* INICIO INDEX - TANIA*/
 #hero {
-    position: relative; 
+    position: flex; 
     width: 100%;
-    height: 100vh;
-    text-align: left;
+    height: auto;
     padding: 16px;
     background-color: var(--color_3);
 }
 
 
 .titulo-contenedor {
-    position: absolute;
+    position: relative;
     top: 10%;                     /* lo pone arriba del svg, ajusta según necesites */
     left: 50%;                   
     transform: translateX(-50%);  
     background-color: var(--color_5);
     padding: 10px;
     border-radius: 0 0 20px 20px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     gap: 32px;
@@ -235,7 +234,7 @@ img{
 text-align: center;
 
 /* karatina desk h1 */
-font-family: Karantina;
+font-family: 'Karantina';
 font-size: 78.54px;
 font-style: normal;
 font-weight: 400;
@@ -244,20 +243,22 @@ line-height: normal;
 
 
 .svg-hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    position: relative;  /* relativo al flujo normal */
+    margin-top: 10px;    /* espacio debajo del título */
+    margin-left: auto;   /* centra horizontalmente */
+    margin-right: auto;
     z-index: 1;
+    width: 506px;
 }
 
 .hero-contenido {
-    position: absolute;
-    top: 80%;                     /* Lo coloca debajo del SVG */
+    position: relative;
+                        /* Lo coloca debajo del SVG */
     left: 50%;                    /* Centro horizontal */
     transform: translateX(-50%);  /* Ajusta para centrar perfectamente */
-    width: 435px;                 /* Ancho fijo segun el svg */
-    height: 168px;                /* Alto fijo segun el svg */
+    width: 450px;                 /* Ancho fijo segun el svg */
+    height: auto;                /* Alto fijo segun el svg */
 
     background-color: var(--color_1);
     padding: var(--padding_6);
@@ -268,6 +269,7 @@ line-height: normal;
     flex-direction: column;
     justify-content: center;      /* Centra contenido verticalmente */
     align-items: center;          /* Centra contenido horizontalmente */
+    margin-top: -2%;
 }
 
 .hero-contenido p{
@@ -288,7 +290,117 @@ line-height: normal;
     text-decoration: none;       
     font-weight: 700;
     font-size: var(--h6);       
-    margin: 0 auto;           
+    margin: 0 auto;         
+}
+/* HERO SECCION RESPONSIVE         */
+
+/* CELULARES */
+@media (min-width: 320px) and (max-width: 767px) {
+    #hero {
+        padding: 24px;
+    }
+
+    .titulo-contenedor {
+        top: 10%;
+        gap: 16px;
+        padding: 10px;
+    }
+
+    .titulo-contenedor h1 {
+        font-size: var(--h4);
+    }
+
+    .hero-contenido {
+        width: 240px;
+        height: auto;
+        top: auto;
+        padding:15px;
+        margin-top: -10px;
+    }
+
+    .hero-contenido p {
+        font-size: var(--xsm);
+        padding: 5px;
+    }
+
+    .hero-contenido .btn-hero {
+        font-size: var(--sm);
+        padding: 8px 15px;
+    }
+
+    .svg-hero {
+        display: none;
+    }
+
+    .svg-hero-movile {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 10px auto 0 auto; /* debajo del título, centrado */
+      position: relative; 
+      z-index: 1;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    #hero {
+        padding: 24px;
+      }
+
+    .titulo-contenedor h1 {
+        font-size: 78px;
+    }
+
+    .hero-contenido {
+        width: 450px;;
+        height: auto;
+
+    }
+
+    .hero-contenido p {
+        font-size: 14px;
+        padding: var(--padding_6);
+    }
+
+    .hero-contenido .btn-hero {
+        font-size: var(--h6);
+        padding: 10px 20px;
+    }
+
+    .svg-hero {
+        display: none;
+    }
+
+    .svg-hero-movile {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 10px auto 0 auto; /* debajo del título, centrado */
+      position: relative; 
+      z-index: 1;
+  }
+}
+
+/* LAPTOPS Y DESKTOP PEQUEÑAS */
+@media (min-width: 1024px) {
+    .titulo-contenedor h1 {
+        font-size: var(--h1);
+    }
+    .svg-hero-movile{
+      display: none;
+    }
+}
+
+/* DESKTOPS Y TVS GRANDES */
+@media (min-width: 1280px) {
+    .titulo-contenedor h1 {
+        font-size: 78px;
+    }
+    .svg-hero-movile{
+      display: none;
+    }
 }
 
 
