@@ -173,7 +173,7 @@ img{
 /*Incio Menu*/
 header{
   background: var(--color_4);
-  background-image: url(https://i.postimg.cc/Hn1QMVxM/grano.png);
+  background-image: url(../imagenes/Interfaz/textura.png);
   background-size: contain;
   background-position: center;
 }
@@ -189,7 +189,7 @@ header .header_row{
 /* LOGO AUKI */
 header .header_row .logo{
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   font-family: 'Karantina';
   padding: 6px 20px;
 }
