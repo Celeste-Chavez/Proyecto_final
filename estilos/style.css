@@ -454,70 +454,79 @@ cursor: pointer;
 /* INICIO DE FOOTER */
 .footer {
   background: var(--color_4);
-  padding: 16px 24px 24px;   
   font-family: 'IBM Plex Mono', monospace;
   color: var(--color_1);
-  border-top: 4px dashed var(--color_1); /* línea punteada superior */
+  border-top: 4px dashed var(--color_1); /* Línea punteada superior */
+
 }
 
-/* parte superior: AUKI + texto */
+/* parte superior: AUKI */
 .footer_top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;  /* Alineamos AUKI a la izquierda */
   align-items: center;
-  gap: 24px;
+  gap: 300px;
+  padding: 16px 24px 24px;
+
+  border-bottom: 4px dashed var(--color_1); /* Línea punteada superior */
+
 }
 
-/* AUKI grande a la izquierda */
 .footer_logo_auki {
   font-family: 'Karantina', cursive;
-  font-size: 48px;           /* un poco más chico que antes (56px) */
+  font-size: 48px;
   letter-spacing: 0.3em;
   color: var(--color_1);
 }
 
-/* Texto de la derecha */
-.footer_text {
-  font-size: 22px;           /* en vez de var(--h4) para que no sea tan grande */
+/* Separador */
+.footer_separator {
+  border-top: 4px dashed var(--color_1);
+  margin: 0px 0;
+}
+
+/* Texto legal en la parte inferior */
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;  /* Distribuir los tres bloques */
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px 24px;
+
+}
+
+/* Alineación de la izquierda */
+.footer_left_text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Alineación al centro */
+.footer_center_text {
+  flex: 1;
+  text-align: center;
+}
+
+/* Alineación a la derecha */
+.footer_right_text {
+  flex: 1;
   text-align: right;
 }
 
-/* Línea punteada horizontal del medio */
-.footer_separator {
-  border-top: 4px dashed var(--color_1);
-  margin: 16px 0 20px;       
-}
-
-/* Texto de abajo centrado */
-.footer_bottom {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 14px;           
-}
-
-/* Responsive: en pantallas pequeñas, AUKI arriba y texto abajo */
+/* Responsive: en pantallas pequeñas, reorganizamos los textos */
 @media (max-width: 768px) {
-  .footer {
-    padding: 12px 16px 20px;
+  .footer_top{
+    gap:24px;
   }
-
-  .footer_top {
+  .footer_bottom {
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     gap: 8px;
   }
 
-  .footer_text {
+  .footer_left_text, .footer_center_text, .footer_right_text {
     text-align: left;
     font-size: 18px;
-  }
-
-  .footer_logo_auki {
-    font-size: 40px;
-  }
-
-  .footer_bottom {
-    font-size: 12px;
   }
 }
 /* FIN FOOTER */
@@ -542,7 +551,7 @@ cursor: pointer;
 /* LAPTOPS Y DESKTOP PEQUEÑAS */
 @media (min-width:1024px){
   header .menu_nav{
-    display:block;      /* muestro las pastillas */
+    display:block;      /* muestro las pastillas */ 
   }
 
   .btn_menu_mobile{
