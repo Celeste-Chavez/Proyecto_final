@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", cargarProyecto);*/
 
-const URL_PROY = '../datos/sobre-proyecto.json';
+/*const URL_PROY = '../datos/sobre-proyecto.json';
 
 async function cargarProyecto() {
   try {
@@ -221,7 +221,7 @@ async function cargarProyecto() {
 
 document.addEventListener("DOMContentLoaded", cargarProyecto);
 
-
+*/
 
 
 // Creditos
