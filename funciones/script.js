@@ -2,7 +2,7 @@
 
 
 // Inicio 
-const URL_INICIO = '../datos/informacion.json'; 
+/*const URL_INICIO = '../datos/informacion.json'; 
 
 async function cargarInicio() {
   try {
@@ -27,7 +27,30 @@ async function cargarInicio() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", cargarInicio); */
+
+const URL_INICIO = '../datos/informacion.json'; 
+
+async function cargarInicio() {
+  try {
+    const respuesta = await fetch(URL_INICIO);
+    const data = await respuesta.json();
+
+    const inicio = data['primera-parte'];
+
+    // Rellenar elementos existentes en el HTML
+    //document.getElementsByClassName('hero-img')[0].src = inicio['img-hero'];
+    document.getElementsByClassName('hero-titulo')[0].textContent = inicio.titular;
+    //document.getElementsByClassName('hero-categoria')[0].textContent = inicio.categoria;
+    document.getElementsByClassName('hero-descripcion')[0].textContent = inicio['frase-descriptiva'];
+
+  } catch (error) {
+    console.error("Error al cargar el proyecto:", error);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", cargarInicio);
+
 
 
 
@@ -63,7 +86,9 @@ async function cargarLeyenMito() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", cargarLeyenMito);
+document.addEventListener("DOMContentLoaded", cargarLeyenMito); 
+
+
 
 
 //MITOS
@@ -196,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", cargarProyecto);*/
 
-const URL_PROY = '../datos/sobre-proyecto.json';
+/*const URL_PROY = '../datos/sobre-proyecto.json';
 
 async function cargarProyecto() {
   try {
@@ -221,7 +246,7 @@ async function cargarProyecto() {
 
 document.addEventListener("DOMContentLoaded", cargarProyecto);
 
-
+*/
 
 
 // Creditos

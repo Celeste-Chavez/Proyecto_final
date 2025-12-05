@@ -170,6 +170,7 @@ header, footer {
   margin: 0 auto; /* Centra el contenido */
 }
 img{
+/*img{
     display: block;
     width: 100%;
     background-color: var(--color-neo_3);
@@ -177,7 +178,7 @@ img{
     min-height: 300px;
     margin-bottom: var(--padding-1);
     
-}
+}*/
 /* SELECTORES PARA CADA ETIQUETA TIPOGRAFICA*/
 
 /* INICIO MODULARIZACION*/
@@ -338,8 +339,208 @@ cursor: pointer;
 }
 /*Fin Menu*/
 
-/* INICIO INDEX*/
-/* FIN INDEX*/
+/* INICIO INDEX - TANIA*/
+#hero {
+    position: flex; 
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    background-color: var(--color_3);
+}
+
+
+.titulo-contenedor {
+    position: relative;
+    top: 10%;                     /* lo pone arriba del svg, ajusta según necesites */
+    left: 50%;                   
+    transform: translateX(-50%);  
+    background-color: var(--color_5);
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    z-index: 100;             
+}
+
+.titulo-contenedor h1{
+  color: var(--color-neo_6);
+text-align: center;
+
+/* karatina desk h1 */
+font-family: 'Karantina';
+font-size: 78.54px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.svg-hero {
+    display: block;
+    position: relative;  /* relativo al flujo normal */
+    margin-top: 10px;    /* espacio debajo del título */
+    margin-left: auto;   /* centra horizontalmente */
+    margin-right: auto;
+    z-index: 1;
+    width: 506px;
+}
+
+.hero-contenido {
+    position: relative;
+                        
+    left: 50%;                    /* Centro horizontal */
+    transform: translateX(-50%);  /* Ajusta para centrar perfectamente */
+    width: 450px;                 /* Ancho fijo segun el svg */
+    height: auto;                /* Alto fijo segun el svg */
+
+    background-color: var(--color_1);
+    padding: var(--padding_6);
+    border-radius: 0 0 20px 20px;
+    color: var(--color_3);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      /* Centra contenido verticalmente */
+    align-items: center;          /* Centra contenido horizontalmente */
+    margin-top: -2%;
+}
+
+.hero-contenido p{
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: var(--padding_6);
+}
+
+.hero-contenido .btn-hero {
+    background-color: var(--color_5);       
+    color: var(--color_4);               
+    text-align: center;          
+    padding: 10px 20px;          
+    border-radius: 0 15px 15px 15px;
+    text-decoration: none;       
+    font-weight: 700;
+    font-size: var(--h6);       
+    margin: 0 auto;         
+}
+/* HERO SECCION RESPONSIVE         */
+
+/* CELULARES */
+@media (min-width: 320px) and (max-width: 767px) {
+    #hero {
+        padding: 24px;
+    }
+
+    .titulo-contenedor {
+        top: 10%;
+        gap: 16px;
+        padding: 10px;
+    }
+
+    .titulo-contenedor h1 {
+        font-size: var(--h4);
+    }
+
+    .hero-contenido {
+        width: 240px;
+        height: auto;
+        top: auto;
+        padding:15px;
+        margin-top: -10px;
+    }
+
+    .hero-contenido p {
+        font-size: var(--xsm);
+        padding: 5px;
+    }
+
+    .hero-contenido .btn-hero {
+        font-size: var(--sm);
+        padding: 8px 15px;
+    }
+
+    .svg-hero {
+        display: none;
+    }
+
+    .svg-hero-movile {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 10px auto 0 auto; /* debajo del título, centrado */
+      position: relative; 
+      z-index: 1;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    #hero {
+        padding: 24px;
+      }
+
+    .titulo-contenedor h1 {
+        font-size: 78px;
+    }
+
+    .hero-contenido {
+        width: 450px;;
+        height: auto;
+
+    }
+
+    .hero-contenido p {
+        font-size: 14px;
+        padding: var(--padding_6);
+    }
+
+    .hero-contenido .btn-hero {
+        font-size: var(--h6);
+        padding: 10px 20px;
+    }
+
+    .svg-hero {
+        display: none;
+    }
+
+    .svg-hero-movile {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 10px auto 0 auto; /* debajo del título, centrado */
+      position: relative; 
+      z-index: 1;
+  }
+}
+
+/* LAPTOPS Y DESKTOP PEQUEÑAS */
+@media (min-width: 1024px) {
+    .titulo-contenedor h1 {
+        font-size: var(--h1);
+    }
+    .svg-hero-movile{
+      display: none;
+    }
+}
+
+/* DESKTOPS Y TVS GRANDES */
+@media (min-width: 1280px) {
+    .titulo-contenedor h1 {
+        font-size: 78px;
+    }
+    .svg-hero-movile{
+      display: none;
+    }
+}
+
+
+
+/* FIN INDEX - TANIA*/
 
 /* INICIO  LEYENDAS*/
 /* FIN LEYENDAS*/
@@ -1030,3 +1231,330 @@ margin-bottom: 20px; /* Agregamos espacio debajo del título */
     .contenedor{
     }
 }
+
+
+/* INICIO MI COLECCION - TANIA*/
+h1 ,h2{
+  font-family: 'Karantina';
+}
+
+/*h1{
+  font-size: var(--h1);
+}*/
+
+/*PARA LA FICHA DE PERFIL*/
+
+#perfil{
+  position: flex; 
+  width: 100%;
+  height: auto;
+  /*background: var(--color_1);*/
+  color: var(--color_3);
+}
+
+
+
+/*#perfil h1{
+
+  
+}*/
+
+#perfil h2{
+  
+  color: var(--color_3);
+  font-size: var(--h1);
+
+}
+
+#perfil h1, h2, #avatar{
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.perfil-contenedor{
+  background-color: var(--color_1);
+  width: 435px;
+  height: auto;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 16px;
+  padding-bottom: 4%;
+  margin: 24px auto;
+}
+
+#avatar{
+  
+  width: 260px;
+  height: auto;
+  border-radius: 100%;
+  margin: 0 auto;
+  background:none;
+  display: block;
+}
+
+.avatar-contenedor{
+  position: relative;
+}
+
+.btn-icon {
+    width: 65.903px;
+    height: 65.024px;
+    border-radius: 50%;   /* Circular */
+    background: #A46C49;
+    z-index: 100;
+    position: absolute;
+    
+    display: inline-flex;       /* Se comporta igual que inline, pero con flex interno */
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon-perfil{
+  transform: translate(70%, -150%); /* (X, Y) */
+}
+
+.btn-icon-descripcion{
+  transform: translate(-30%, -20%); /* (X, Y) */
+}
+
+.perfil-caja-texto{
+  text-align: center;
+  left: 50%;
+  background: var(--color_3);
+  position: relative;
+  left: 50%;                   
+  transform: translateX(-50%);  /* Ajusta para centrar perfectamente */
+
+  display: flex;
+  padding: var(--padding_6);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;  
+  color: var(--color_1);
+  font-weight: bold;            
+}
+
+.titulo-coleccion{
+  background: var(--color_5);
+  color: var(--color_3);
+  position: relative;                    
+  left: 50%;                   
+  transform: translateX(-50%);  
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+  display: inline-flex;
+  font-size: var(--h1);
+
+}
+
+.card-fila{
+  display: flex;
+  justify-content: space-between; /* Separa los elementos uniformemente */
+  margin-top: var(--padding_6);
+}
+
+.coleccion{
+  padding: 26px 70px;
+}
+
+.coleccion-slider{
+  display: none;
+}
+
+/*PARA EL SLIDER DE LAS CARDS*/
+
+.coleccion-slider{
+justify-content: center;
+}
+
+.slider {
+  margin: auto 0;
+  max-width: 940px;
+  text-align: center; 
+}
+
+.slide_viewer {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background: none;
+}
+
+.slide:nth-of-type(2) {
+  background: none;
+}
+
+.slide:nth-of-type(3) {
+  background: none;
+}
+
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #D9D9D9;
+  font-size: 60px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: var(--color_5);
+  cursor: pointer;
+}
+
+.directional_nav {
+  /*height: 340px;*/
+  margin: 0 auto;
+  max-width: 940px;
+  position: relative;
+  top: 60px;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  text-align: center;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /*LA FICHA DE PERFIL*/
+  .perfil-contenedor{
+  background-color: var(--color_1);
+  padding: 16px;
+  margin: 0px auto;
+  width: 360px;
+}
+.perfil-caja-texto{
+  background: none;
+   /* Ajusta para centrar perfectamente */
+  width: 304px;
+  padding: var(--padding_6); 
+  color: var(--color_3);  
+  padding-bottom: 40%;        
+}
+.btn-icon-descripcion{
+  transform: translate(-30%, -150%); /* (X, Y) */
+}
+
+.titulo-coleccion{
+  padding-top: 0px;
+  font-size: var(--h2);
+  text-align: center;
+  top: 0px;
+  margin-bottom: var(--padding_6);
+}
+
+
+  /*PARA EL SLIDER EN REPONSIVE*/
+  .coleccion-slider{
+    display: block;
+    margin-bottom: 40%;
+  }
+
+  .coleccion{
+    display: none;
+  }
+  .previous_btn {
+    left: 50px;
+  }
+  .next_btn {
+    right: 50px;
+  }
+
+}
+
+/*PARTE PARA HACER LA PRUEBA*/
+
+
+
+/*DISPOSITIVOS MÓVILES GRANDES */
+@media (min-width:320px){
+    .coleccion{
+}
+}
+/* TABLETS */
+@media (min-width:768px){
+    .contenedor{
+    }
+}
+/* LAPTOPS Y DESKTOP PEQUEÑAS */
+@media (min-width:1024px){
+  header .menu_nav{
+    display:block;      /* muestro las pastillas */
+  }
+
+  .bubyu{
+    display:none;       /* oculto el botón hamburguesa */
+  }
+}
+/* DESKTOPS Y TVS GRANDES */
+@media (min-width:1280px){
+    .contenedor{
+    }
+}
+
+
+/* FIN MI COLECCION - TANIA*/
+
+
