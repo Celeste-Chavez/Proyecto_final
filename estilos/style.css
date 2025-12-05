@@ -147,11 +147,29 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--color_4); /* agregar el color*/
-    font-family: 'IBM Plex Mono';  /*agregar tipografia*/
+body {
+  margin: 0; /* Elimina márgenes por defecto */
 }
 
+/* Contenedor principal que envuelve todo excepto header y footer */
+.main-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* Asegura que el header y footer no tengan el padding de los lados */
+header, footer {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+/* Opcional: Si necesitas un contenedor con max-width para no hacer que el contenido sea demasiado ancho */
+.main-content {
+  max-width: 100%;  /* Asegura que ocupe todo el espacio disponible */
+  margin: 0 auto; /* Centra el contenido */
+}
+img{
 /*img{
     display: block;
     width: 100%;
@@ -176,6 +194,7 @@ header{
   background-image: url(../imagenes/Interfaz/textura.png);
   background-size: contain;
   background-position: center;
+  margin-bottom: 0%;
 }
 
 /* FILA DEL HEADER */
@@ -645,12 +664,455 @@ line-height: normal;
 /* INICIO  PERFIL*/
 /* FIN PERFIL*/
 
-/* INICIO  SOBRE EL PROYECTO*/
-/* FIN SOBRE EL PROYECTO*/ 
+/* INICIO SOBRE EL PROYECTO */ 
+#sobre-proyecto {
+  padding: 0px;
+  background-color: var(--color_3);
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  margin-top: 0%;
+}
+
+.titulo-proyecto h1 {
+    color: #fff; 
+    font-size: 78.54px;
+    font-family: 'Karantina';
+    background-color: #960018;
+    padding: 12px  20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 0 0 20px 20px;
+    text-align: left;
+}
+
+/*  Contenido abajo de sobre el proyecto */
+.titulo-proyecto p {
+  color: #000;
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 149%; /* 23.84px */
+  padding-right: 70px;
+  text-align: left;
+    margin-left: 70px;
+
+}
+
+ /* Título "Equipo de este proyecto" */
+/* Fondo rojo solo al título "Equipo de este proyecto" */
+
+.equipo-pro1 {
+  text-align: left;  /* Alineamos el contenedor "segundo titulo"a la izquierda */
+  padding-left: 70px;
+  
+}
+
+.equipo-pro1 h2 {
+  background-color: var(--color_5); /* Fondo rojo */
+  color: white;  /* Color de texto blanco */
+  text-align: left; /* Alineamos el texto a la izquierda */
+  padding: 10px 20px; /* Añadimos espacio alrededor del texto */
+  margin: 0; 
+  display: inline; 
+  border-radius: 0 20px 20px 3px; /* Bordes redondeados */
+}
+
+
+/* Para el contenido "texto-equipo", sin fondo */
+.texto-equipo {
+  background-color: transparent; 
+  color: black;  
+  text-align: left; /* Alineamos el texto a la izquierda */
+  padding: 20px 70px; /* Añadimos espacio alrededor del texto */
+  margin-top: 0; /* Sin margen superior */
+  margin-left: 0; /* Alineación sin margen extra */
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+/* Contenedor para las imágenes del equipo */
+.imagenes-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alinea las imágenes al centro */
+  gap: 30px; /* Espacio entre imágenes */
+  align-items: center; /* Centrado vertical de las imágenes */
+}
+
+/* 3imágenes sobre el proyecto */
+.imagen1, .imagen2, .imagen3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen1 {
+  width: 672px;
+  height: 672px;
+  justify-content: center;
+  align-items: center;
+  color: var(--Marron_oscuro, #452829);
+  text-align: center;
+
+/* karatinah3 */
+font-family: 'Karantina';
+font-size: 33.18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.imagen2, .imagen3 {
+  height: 308px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contenedorimg1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 15px;
+}
+
+/* Titulos arriba de nuestras fotos */
+.nombre1, .nombre2, .nombre3, .nombre4, .nombre5, .nombre6, .nombre7, .nombre8, .nombre9, .nombre10, .nombre11 {
+  color: var(--color_1);
+  font-family: "IBM Plex Mono";
+  font-size: 19.2px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .imagenes-equipo {
+      flex-direction: column; /* Pone las imágenes en columna */
+      gap: 20px; /* Menor separación */
+  }
+
+  .imagen {
+      width: 90%;
+      height: 150px;
+  }
+}
+
+/* Distribuir las filas con flexbox "Sirve para ordenar, alinear y espaciar elementos dentro de un contenedor de forma flexible y responsiva */
+.equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrado de los miembros */
+  justify-content: space-evenly;
+}
+
+/* Fila 1: Un miembro */
+.fila-1 {
+  display: flex;
+  justify-content: center;  /* Solo un miembro centrado */
+  width: 100%;
+}
+.fila-1 .miembro {
+  margin-left: 0; /* Asegúrate de que no haya margen izquierdo adicional */
+}
+
+.fila-1 .foto-perfil {
+  margin-left: -23px; /* Alinea la imagen (circular) hacia la izquierda */
+}
+
+/* Fila 2  Dos miembros */
+
+.fila-2 {
+  display: flex;
+  justify-content: flex-start; /* Mueve todo hacia la izquierda */
+}
+
+.fila-2 .miembro2, .fila-2 .miembro3 {
+  margin-left: 0; /* Asegúrate de que no haya margen adicional */
+}
+
+.fila-2 .foto-perfil {
+  margin-left: 20px; /* Alinea las imágenes a la izquierda */
+
+}
+/* Fila 3  Dos miembros */
+
+.fila-3 {
+  display: flex;
+  justify-content: flex-start; /* Mueve todo hacia la izquierda */
+}
+
+.fila-3 .miembro2, .fila-2 .miembro3 {
+  margin-left: 0; /* Asegúrate de que no haya margen adicional */
+}
+
+.fila-3 .foto-perfil {
+  margin-left: 20px; /* Alinea las imágenes a la izquierda */
+
+}
+
+/* Fila 2 y 3: Dos miembros */
+.fila-2, .fila-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 100%; /* Espacio */
+  gap: 30px;
+}
+.Equipo-Diseño{
+  text-align: center;
+  margin-bottom: 20 px;
+}
+.fila-4 {
+  display: flex;
+  justify-content:flex-end; /* Mueve todo hacia la izquierda */
+  gap: 30px;
+  width: 100px;
+}
+
+.fila-4 .miembro6,.fila-4 .miembro7,.fila-4 .miembro8 {
+  margin-left: 60px; /* Alinea las imágenes a la izquierda */
+}
+
+/* Fila 4 y 5: Tres miembros */
+.fila-4, .fila-5 {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  gap: 30px;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+
+
+.Equipo-Desarrollo{
+  text-align: center;
+  margin-bottom: 20 px;
+}
+.fila-5 {
+  display: flex;
+  justify-content:center; /* Mueve todo hacia la izquierda */
+  gap: 50px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+.fila-5 .miembro9,.fila-5 .miembro10,.fila-5 .miembro11 {
+  margin-right: 60px; /* Alinea las imágenes a la izquierda */
+}
+
+/* Fila 4 y 5: Tres miembros */
+.fila-4, .fila-5 {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo-docente{
+  margin-bottom: 20px;
+}
+/* Estilo para los miembros */
+.miembro {
+  text-align: center;
+  width: 250px; /* Ancho de los nombres abajo de las fotos */
+  margin-bottom: 0px;
+  margin-top: 20px;/* Espacio entre la imagen y el texto del miembro */
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.rol {
+  color: #000;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 149%; /* 23.84px */
+}
+.titulo-docente{
+  color: var(--Marron_oscuro, #452829);
+text-align: center;
+/* karatinah3 */
+font-family:'Karantina';
+font-size: 33.18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  margin-bottom: 20px;
+}
+
+.Product-Owner{
+  color: var(--Marron_oscuro, #452829);
+text-align: center;
+/* karatinah3 */
+font-family:'Karantina';
+font-size: 33.18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 20px; /* Agregamos espacio debajo del título */
+
+
+}
+.Scrum-Master{
+  color: var(--Marron_oscuro, #452829);
+text-align: center;
+/* karatinah3 */
+font-family:'Karantina';
+font-size: 33.18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 20px; /* Agregamos espacio debajo del título */
+
+}
+.Equipo-Investigación{
+  color: var(--Marron_oscuro, #452829);
+  text-align: center;
+  /* karatinah3 */
+  font-family:'Karantina';
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.Equipo-Diseño{
+  color: var(--Marron_oscuro, #452829);
+  text-align: center;
+  /* karatinah3 */
+  font-family:'Karantina';
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.Equipo-Desarrollo {
+  color: var(--Marron_oscuro, #452829);
+  text-align: center;
+  /* karatinah3 */
+  font-family:'Karantina';
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilo responsivo para pantallas medianas */
+@media (max-width: 768px) {
+  /* En pantallas medianas, adaptamos a una sola columna */
+  .fila-2, .fila-3, .fila-4, .fila-5 {
+      flex-direction: column; /* Cambiar a columna */
+      align-items: center;  /* Centrado */
+  }
+
+  /* Reduce el espacio entre las filas */
+  .equipo {
+      gap: 30px;
+  }
+}
+
+
+
+/* FIN SOBRE EL PROYECTO */
+
+
+
+
+
+/* MEDIA QUERIES Y BREAKPOINTS */
+
+/* Dispositivos móviles grandes */
+@media (min-width: 320px) {
+  .contenedor {
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .contenedor {
+  }
+}
+
+/* Laptops y desktops pequeñas */
+@media (min-width: 1024px) {
+  header .menu_nav {
+    display: block;
+  }
+
+  .btn_menu_mobile {
+    display: none;
+  }
+}
+
+/* Desktops y TVs grandes */
+@media (min-width: 1280px) {
+  .contenedor {
+  }
+}
+
 
 /* INICIO  CREDITOS*/
 /* FIN CREDITOS*/
 
+/* Agregar espacio de 90px entre el contenido y el footer */
+.espacio-color {
+  height: 90px;
+  background-color: var(--color_3);
+}
 /* INICIO DE FOOTER */
 .footer {
   background: var(--color_4);
@@ -700,6 +1162,12 @@ line-height: normal;
   flex: 1;
   text-align: left;
 }
+
+/* margen del footer de arriba */
+.ultim {
+  margin-bottom: 90px;
+}
+
 
 /* Alineación al centro */
 .footer_center_text {

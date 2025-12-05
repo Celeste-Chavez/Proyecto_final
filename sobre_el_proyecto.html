@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
     <script src="funciones/script.js"></script>
-    
 </head>
 <body>
   <header class="header">
@@ -62,79 +61,144 @@
             <div class="rol">Desarrollador</div>
         </div>
     </div>
+  
+    <!-- MENÚ DESPLEGABLE LATERAL (mobile) -->
+    <nav class="menu_desplegable" id="menu-desplegable">
+      <ul class="menu_lista">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="leyendas.html">MITOS Y LEYENDAS</a></li>
+        <li><a href="mi_coleccion.html">MI COLECCIÓN</a></li>
+        <li><a href="sobre_el_proyecto.html">PROYECTO</a></li>
+      </ul>
+      <button class="cerrar-menu" id="cerrar-menu">CERRAR</button>
+    </nav>
+  </header>
+  
+  <main class="main">
 
-    <!-- TÍTULO 2 -->
-    <div class="titulo">Título general 2</div>
-
-    <!-- FILA 2 (2 elementos) -->
-    <div class="fila fila-2">
-        <div class="item">
-            <img src="imagenes/ejemplo.png" class="foto-perfil">
-            <div class="nombre">Nombre</div>
-            <div class="rol">Desarrollador</div>
-        </div>
-
-        <div class="item">
-            <img src="imagenes/ejemplo.png" class="foto-perfil">
-            <div class="nombre">Nombre</div>
-            <div class="rol">Desarrollador</div>
-        </div>
-    </div>
-
-    <!-- TÍTULO 3 -->
-    <div class="titulo">Título general 3</div>
-
-    <!-- FILA 3 (2 elementos) -->
-    <div class="fila fila-3">
-        <div class="item">
-            <img src="imagenes/ejemplo.png" class="foto-perfil">
-            <div class="nombre">Nombre</div>
-            <div class="rol">Desarrollador</div>
-        </div>
-
-        <div class="item">
-            <img src="imagenes/ejemplo.png" class="foto-perfil">
-            <div class="nombre">Nombre</div>
-            <div class="rol">Desarrollador</div>
-        </div>
-    </div>
-
-    <!-- TÍTULO 4 -->
-    <div class="titulo">Título general 4</div>
-
-    <!-- FILA 4 (3 elementos) -->
-    <div class="fila fila-4">
-        <div class="item">
-            <img src="imagenes/ejemplo.png" class="foto-perfil">
-            <div class="nombre">Nombre</div>
-            <div class="rol">Desarrollador</div>
-        </div>
-
-        <div class="item">
-            <img src="imagenes/ejemplo.png" class="foto-perfil">
-            <div class="nombre">Nombre</div>
-            <div class="rol">Desarrollador</div>
-        </div>
-
-        <div class="itm">
-            <img src="imagenes/ejemplo.png" class="foto-perfil">
-            <div class="nombre">Nombre</div>
-            <div class="rol">Desarrollador</div>
-        </div>
-    </div>
-
-</section>
-
-    <!--<script src="datos/sobre-proyecto.json"></script> -->
-
+  </main>
+    <!-- Sección sobre el proyecto -->
     <section id="sobre-proyecto">
-        <h1>Título del proyecto</h1>
-        <h2>Nombre del autor o equipo</h2>
-        <p>Descripción breve del proyecto.</p>
+      <div class="contenedor-titulo" div>  
+        <div class="titulo-proyecto">
+            <h1>Sobre el Proyecto</h1>
+            <p>Somos un grupo de paceños que conserva la cultura boliviana-paceña mediante sus historias creadas e incentiva a sus usuarios a explorar la urbanidad paceña y descubrir acerca de sus leyendas y mitos en La Paz, nos unimos para que las próximas generaciones de paceños se les inculque sobre sus relatos que evocan nuestras identidad.</p>
+        </div>
+    <!-- Bloques de imagen -->
+        <div class="contenedorimg1">
+            <div class="imagen1">
+                <img src="path_to_image1.jpg" alt="Imagen 1" class="imagen-proyecto">
+            </div>
+            <div class="columna">
+                <div class="imagen2">
+                    <img src="path_to_image2.jpg" alt="Imagen 2" class="imagen-proyecto">
+                </div>
+                <div class="imagen3">
+                    <img src="path_to_image3.jpg" alt="Imagen 3" class="imagen-proyecto">
+                </div>
+            </div>    
+            </div>     
+    
+        <div class="equipo-pro1">
+            <h1>Equipo de este proyecto</h1>
+            <div class="texto-equipo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque.</p>
+            </div>
+        </div>
+    
+        <!-- Equipo de este proyecto -->
+        <div class="equipo-proyecto">
+        <!--Titulo antes de la foto-->
+        <div class="titulo-docente">DOCENTE/CLIENTE</div>
+        
+            <!-- Fila 1: Miembro 1 -->
+            <div class="fila-1">
+                <div class="miembro">
+                    <img src="imagenes/ejemplo.png" alt="Ernesto Ariel Zaldivar Paredes" class="foto-perfil">
+                    <div class="nombre1">Ernesto Ariel Zaldivar Paredes</div>
+                    <div class="rol">DOCENTE/CLIENTE</div>
+                </div>
+            </div>
+
+            <!-- Fila 2: Miembros 2 y 3 -->
+            <div class="fila-2">
+                <div class="miembro2">
+                    <div class="Product-Owner">PRODUCT OWNER</div>
+                    <img src="imagenes/ejemplo.png" alt="Celeste Nataly Chavez Murillo" class="foto-perfil">
+                    <div class="nombre2">Celeste Nataly Chavez Murillo</div>
+                    <div class="rol">Product Owner</div>
+                </div>
+                <div class="miembro3">
+                    <div class="Scrum-Master">SCRUM MASTER</div>
+                    <img src="imagenes/ejemplo.png" alt="Rebeca Naomi Delgadillo Alarcón" class="foto-perfil">
+                    <div class="nombre3">Rebeca Naomi Delgadillo Alarcón</div>
+                    <div class="rol">Scrum Master</div>
+                </div>
+            </div>
+
+              <!--Titulo antes de la foto fila 3-->
+              <div class="Equipo-Investigación">INVESTIGACIÓN</div>  
+
+            <!-- Fila 3: Miembros 4 y 5 -->
+            <div class="fila-3">
+                <div class="miembro4">
+                    <img src="imagenes/ejemplo.png" alt="Luciana Sofia Gutierrez Callizaya" class="foto-perfil">
+                    <div class="nombre4">Luciana Sofia Gutierrez Callizaya</div>
+                    <div class="rol">Investigación</div>
+                </div>
+                <div class="miembro5">
+                    <img src="imagenes/ejemplo.png" alt="Camila Fernanda Uquillani Apaza" class="foto-perfil">
+                    <div class="nombre5">Camila Fernanda Uquillani Apaza</div>
+                    <div class="rol">Investigación</div>
+                </div>
+            </div>
+
+            <!--Titulo antes de la foto fila 4-->
+            <div class="Equipo-Diseño">DISEÑO</div>
+
+            <!-- Fila 4: Miembros 6, 7 y 8 -->
+            <div class="fila-4">
+                <div class="miembro6">
+                    <img src="imagenes/ejemplo.png" alt="Dylan Fabricio Villa Luna" class="foto-perfil">
+                    <div class="nombre6">Dylan Fabricio Villa Luna</div>
+                    <div class="rol">DISEÑO</div>
+                </div>
+                <div class="miembro7">                    <img src="imagenes/ejemplo.png" alt="Leonardo Antonio Romero Tito" class="foto-perfil">
+                    <div class="nombre7">Leonardo Antonio Romero Tito</div>
+                    <div class="rol">Diseño</div>
+                </div>
+                <div class="miembro8">
+                    <img src="imagenes/ejemplo.png" alt="Vanesa Adriana Azcarat Álvarez" class="foto-perfil">
+                    <div class="nombre8">Vanesa Adriana Azcarat Álvarez</div>
+                    <div class="rol">Diseño</div>
+                </div>
+            </div>
+
+            <!--Titulo antes de la foto fila 4-->
+            <div class="Equipo-Desarrollo">DESARROLLO</div>
+
+            <!-- Fila 5: Miembros 9, 10 y 11 -->
+            <div class="fila-5">
+                <div class="miembro9">
+                    <img src="imagenes/ejemplo.png" alt="Gema Magali Condori Macias" class="foto-perfil">
+                    <div class="nombre9">Gema Magali Condori Macias</div>
+                    <div class="rol">Desarrollo</div>
+                </div>
+                <div class="miembro10">
+                    <img src="imagenes/ejemplo.png" alt="Tania Limachi Gutiérrez" class="foto-perfil">
+                    <div class="nombre10">Tania Limachi Gutiérrez</div>
+                    <div class="rol">Desarrollo</div>
+                </div>
+                <div class="miembro11">
+                    <img src="imagenes/ejemplo.png" alt="Mirko Rafael Ortega Fagalde" class="foto-perfil">
+                    <div class="nombre11">Mirko Rafael Ortega Fagalde</div>
+                    <div class="rol">Desarrollo</div>
+                </div>
+            </div>
+        </div>
     </section>
-
-
-
+</main>
+    <div class="espacio-color"></div>
     <footer class="footer">
         <div class="footer_top">
             <div class="footer_left">
@@ -157,6 +221,7 @@
                 <p>Todos los derechos reservados.</p>
             </div>
         </div>
+    </footer>   
     </footer>
 </body>
 </html>
