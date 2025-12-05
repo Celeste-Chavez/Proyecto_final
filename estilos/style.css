@@ -147,29 +147,11 @@
     box-sizing: border-box;
 }
 
-body {
-  margin: 0; /* Elimina márgenes por defecto */
+body{
+    background-color: var(--color_4); /* agregar el color*/
+    font-family: 'IBM Plex Mono';  /*agregar tipografia*/
 }
 
-/* Contenedor principal que envuelve todo excepto header y footer */
-.main-content {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-/* Asegura que el header y footer no tengan el padding de los lados */
-header, footer {
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0;
-}
-
-/* Opcional: Si necesitas un contenedor con max-width para no hacer que el contenido sea demasiado ancho */
-.main-content {
-  max-width: 100%;  /* Asegura que ocupe todo el espacio disponible */
-  margin: 0 auto; /* Centra el contenido */
-}
-img{
 /*img{
     display: block;
     width: 100%;
@@ -542,8 +524,745 @@ line-height: normal;
 
 /* FIN INDEX - TANIA*/
 
-/* INICIO  LEYENDAS*/
+
+/* INICIO  LEYENDAS y mitos GEMA */ 
+
+.mistica{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  padding: 16px;
+  background-color:var(--color_3) ;
+  color: var(--color_1);
+  gap: var(--gap-1);
+}
+.mistica_titulo{
+  color: var(--color_1);
+  text-align: center;
+  font-family: Karantina;
+  font-size: 39.81px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+.mistica_imagen{}
+.mistica_texto{
+  color: var(--color_1);
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 149%; /* 23.84px */
+}
+
+.mistica_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  /*padding: 16px;*/
+  background-color:var(--color_3) ;
+  color: var(--color_1);
+}
+.mistica_cards_1{
+  display: flex;
+  /*width: 360px;
+  height: 665px;*/
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: var(--gap-1);
+
+}
+.mistica_cards_1_titulo{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  left: 0%;*/
+  display:flex;
+  width: 250px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color_5);
+  padding: 40px 16px 65px 16px;
+  gap: var(--gap-1);
+  color: var(--color_3);
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: -15%;
+  
+  /*position: relative;
+  top: 10%;                     /* lo pone arriba del svg, ajusta según necesites 
+  left: 50%;                   
+  transform: translateX(-50%);  
+  background-color: var(--color_5);
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  z-index: 100; */
+
+
+}
+.mistica_cards_1_imagen{
+  /*display: flex;
+  width: 280px;
+  height: 423px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  display: block;
+  position: relative;
+  
+  z-index: 2;
+  
+}
+.mistica_cards_1_texto{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  bottom: -50;
+  left: 0%;*/
+  display: flex;
+  background-color: var(--color_1);
+  color: var(--color_3);
+  width: 253px;
+  padding: 50px 16px 16px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-1);
+  border-radius: 0px 0 20px 20px;
+  margin-top: -15%;
+  
+}
+.btn-mistico_1{
+  padding: 16px;
+  text-decoration: none;
+  background-color: var(--color_5);
+  color: var(--color_4);
+  border-radius: 0px 10px 10px 10px;
+  font-family: "IBM Plex Mono";
+  font-size: 19.2px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.btn-sagrada_1{
+  padding: 16px;
+  text-decoration: none;
+  background-color: var(--color_5);
+  color: var(--color_4);
+  border-radius: 0px 10px 10px 10px;
+  font-family: "IBM Plex Mono";
+  font-size: 19.2px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+
+.mistica_cards_2{}
+.mistica_cards_2_titulo{}
+.mistica_cards_2_imagen{}
+.mistica_cards_2_texto{
+  
+}
+
+.mistica_cards_3{}
+.mistica_cards_3_titulo{}
+.mistica_cards_3_imagen{}
+.mistica_cards_3_texto{}
+
+.sagrada{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  padding: 16px;
+  background-color:var(--color_1) ;
+  color: var(--color_4);
+  gap: var(--gap-1);
+  
+}
+.sagrada_titulo{
+  color: var(--color_4);
+  text-align: center;
+  font-family: Karantina;
+  font-size: 39.81px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sagrada_texto{
+  color: var(--color_3);
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 149%; /* 23.84px */
+}
+.sagrada_imagen{}
+
+.sagrada_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  padding: 25px;
+  background-color:var(--color_1) ;
+  color: var(--color_3);
+}
+.sagrada_cards_1{
+  display: flex;
+  /*width: 360px;
+  height: 665px;*/
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-1);
+}
+.sagrada_cards_1_titulo{
+  /*position: relative;
+  z-index: 1;
+  margin-bottom: -10%;*/
+}
+.sagrada_cards_1_imagen{
+  display: block;
+  position: relative;
+
+  z-index: 2;
+}
+.sagrada_cards_1_texto{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  left: 0%;*/
+  display: flex;
+  background-color: var(--color_3);
+  color: var(--color_1);
+  width: 253px;
+  padding: 40px 16px 16px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-1);
+  border-radius: 0px 0 20px 20px;
+  margin-top: -15%;
+}
+
+.sagrada_cards_2{}
+.sagrada_cards_2_titulo{}
+.sagrada_cards_2_imagen{}
+.sagrada_cards_2_texto{}
+
+.sagrada_cards_3{}
+.sagrada_cards_3_titulo{}
+.sagrada_cards_3_imagen{}
+.sagrada_cards_3_texto{}
+
+.historica{
+  
+}
+.historica_texto{}
+.historica_imagen{}
+
+.historica_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  /*padding: 16px;*/
+  background-color:var(--color_3) ;
+  color: var(--color_1);
+}
+.historica_cards_1{
+  display: flex;
+  /*width: 360px;
+  height: 665px;*/
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: var(--gap-1);
+}
+.historica_cards_1_titulo{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  left: 0%;*/
+  display:flex;
+  width: 250px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color_5);
+  padding: 20px 16px 30px 16px;
+  gap: var(--gap-1);
+  color: var(--color_3);
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: -10%;
+}
+.historica_cards_1_imagen{
+  display: block;
+  position: relative;
+  
+  z-index: 2;
+  
+}
+.historica_cards_1_texto{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  bottom: -50;
+  left: 0%;*/
+  display: flex;
+  background-color: var(--color_1);
+  color: var(--color_3);
+  width: 253px;
+  padding: 50px 16px 16px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-1);
+  border-radius: 0px 0 20px 20px;
+  margin-top: -15%;
+}
+
+.hisorica_cards_2{}
+.historica_cards_2_titulo{}
+.historica_cards_2_imagen{}
+.historica_cards_2_texto{}
+
+/* SECCION RESPONSIVE*/
+/* DESKTOP*/
+@media (min-width: 1200px) {
+  .mistica{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    padding: 70px;
+    
+  }
+  .mistica_titulo{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding: 150px 0px 0px 50px;
+  }
+  .mistica_imagen{
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    align-items: center;
+  }
+  .mistica_texto{
+    grid-row: 2/ 3;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding: 0px 0px 0px 50px;
+  }
+  .mistica_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    padding:0px 70px 70px 70px;
+  }
+  .mistica_cards_1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .mistica_cards_2{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .mistica_cards_3{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    
+  }
+
+  .mistica_cards_1_titulo{
+    display: flex;
+    width: 250px;
+    height: 92px;
+    padding: 40px 16px 65px 16px;
+  }
+  .mistica_cards_1_texto{
+  }
+
+  /*.btn-mistico_1{
+    color: var(--color_3);
+    padding: 0px;
+    background-color: var(--color_3);
+  }
+  .btn-sagrada_1{
+    color: var(--color_1);
+    padding: 0px;
+    background-color: var(--color_1);
+  }*/
+  .sagrada{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    padding: 70px;
+    
+  }
+  .sagrada_titulo{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding: 100px 0px 0px 50px;
+  }
+  .sagrada_imagen_desktop{
+    grid-row: 1/ 4;
+    grid-column: 2/ 3;
+    /*align-items: center;*/
+  }
+  .sagrada_texto{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding: 0px 0px 0px 50px;
+  }
+  .sagrada_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    padding:0px 70px 70px 70px;
+  }
+  .sagrada_cards_1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .sagrada_cards_2{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .sagrada_cards_3{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+  }
+  .historica_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: none;
+    padding:0px 70px 70px 70px;
+  }
+  .historica_cards_1{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+  }
+  .historica_cards_2{
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+  }
+
+  .mistica_cards_1:hover{
+  transform: scale(1.05);
+  }
+  .sagrada_cards_1:hover{
+  transform: scale(1.05);
+  }
+  .historica_cards_1:hover{
+  transform: scale(1.05);
+  }
+}
+
+/* TABLETS*/
+@media (min-width: 768px){}
+
+/* LAPTOPS Y DESKTOPS PEQUEÑAS*/
+@media (min-width: 1024px) {}
+
+/* DESKTOPS Y TV GRANDES*/
+@media (min-width: 1280px) {}
+
 /* FIN LEYENDAS*/
+
+/*-------------------------------------------*/
+/* INICIO CONTENIDO LEYENDAS*/
+.inicio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  padding: 16px;
+  background-color:var(--color_3) ;
+  color: var(--color_1);
+  gap: var(--gap-1);
+}
+.inicio_titulo{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding: 16px;
+  background-color: var(--color_5);
+  color: var(--color_3);
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+
+
+  font-family: Karantina;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.inicio_categoria{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 16px 0px 16px;
+  background-color: var(--color_4);
+  color: var(--color_1);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  /*margin-top: 0px;*/
+  margin-top: -10%;
+
+  /* karatina desk h4 */
+  font-family: Karantina;
+  font-size: 33.16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+.inicio_descripcion{
+  text-align: center;
+  color: var(--color_1);
+
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 149%; /* 23.84px */
+}
+.inicio_imagen{
+  position: relative;
+  z-index: 1;
+}
+.btn_agregar{
+  
+  
+  padding: 16px;
+  /*position: relative; /*  Permite anclarlo. */
+  /*position: relative;
+  /* Posicionamiento en la esquina inferior derecha 
+  bottom: 0px; 
+  right: 0px; 
+  margin-top: -20%;
+  z-index: 2;*/
+}
+.imag_agregar{
+  
+  justify-content: right;
+  min-width: 60px;
+  min-height: 60px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  background-color: var(--color_4);
+  border-radius: 100%;
+  position: relative;
+  /* Posicionamiento en la esquina inferior derecha */
+  bottom: 0px; 
+  right: 0px; 
+  margin-top: -35%;
+  margin-left: 75%;
+  z-index: 2;
+}
+.contenido{
+  padding: 16px;
+  color: var(--color_1);
+  text-align: center;
+  background-color: var(--color_3);
+
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 149%; /* 23.84px */
+}
+.contenido_texto{}
+.datos{
+    background-color: var(--color_3);
+  /*align-items: center;*/
+  padding: 16PX;
+
+}
+.datos_titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 16px;
+  width: 251px;
+  height: 60px;
+  color: var(--color_3);
+  background-color: var(--color_5);
+  border-radius: 0px 0px 20px 20px;
+  font-family: Karantina;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.datos_cards{
+  
+}
+.datos_cards_1{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px 0px 0px;
+}
+.datos_cards_1_imagen{
+  display: block;
+  position: relative;
+  
+  z-index: 2;
+}
+.datos_cards_1_texto{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  left: 0%;*/
+  /*display: flex;
+  flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: var(--color_4);
+  color: var(--color_1);
+  width: 312px;
+  padding: 50px 16px 16px 16px;
+  /*gap: var(--gap-1);*/
+  border-radius: 10px 10px 20px 20px;
+  margin-top: -15%;
+}
+.datos_cards_2{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px 0px 0px;
+}
+.datos_cards_2_texto{}
+
+
+@media (min-width: 1200px) {
+  
+  .inicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    padding: 70px;
+    column-gap: 80px;
+    
+  }
+  .inicio_titulo{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-items:left;
+    border-radius: 0px 0px 20px 0px;
+  }
+  .inicio_categoria{
+    grid-row: 2 / 3;
+    grid-column: 1/2 ;
+
+  }
+  .inicio_descripcion{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    text-align: left;
+    padding: 50px 80px 0px 0px;
+
+  }
+  .ilustracion_agregar{
+    grid-row: 1/ 4;
+    grid-column: 2 / 3;
+  }
+  .btn_agregar{
+    grid-row: 1/ 4;
+    grid-column: 2 / 3;
+  }
+  .imag_agregar{
+    grid-row: 1/ 4;
+    grid-column: 2 / 3;
+    transform: translate( -300%, 10%);
+  }
+  /*.datos{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    border: none;
+    padding: 70px;
+  }*/
+  .datos_titulo{
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    
+    /*font-family: Karantina;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;*/
+  }
+  .datos_cards{
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: none;
+    /*padding: 0px 100px 0px 100px;*/
+
+    display: grid;
+    /*grid-template-columns: 1fr 1fr ;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    border: none;
+    padding: 0px 30px 40px 30px;
+  }
+  .datos_cards_1{
+    grid-row: 1 / 2;
+    grid-column: 2/ 3;
+  }
+  .datos_cards_2{
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+  }
+  .datos_cards_1_texto{
+    padding: 60px 16px 16px 16px;
+  }
+
+}
+
+/* FIN CONTENIDO LEYENDAS*/
+/*-------------------------------------------*/
+
 
 
 /* INICIO  LEYENDAS Y MITOS */
@@ -664,537 +1383,218 @@ line-height: normal;
 /* INICIO  PERFIL*/
 /* FIN PERFIL*/
 
-/* INICIO SOBRE EL PROYECTO */ 
-#sobre-proyecto {
-  padding: 0px;
-  background-color: var(--color_3);
-  text-align: center;
-  border-radius: 0 0 20px 20px;
-  margin-top: 0%;
-}
 
-.titulo-proyecto h1 {
-    color: #fff; 
-    font-size: 78.54px;
-    font-family: 'Karantina';
-    background-color: #960018;
-    padding: 12px  20px;
-    display: inline-block;
-    margin-bottom: 10px;
+
+/* INICIO  SOBRE EL PROYECTO*/
+
+
+.titulo-sobre-proyecto{
+    position: relative;
+    top: 10%;                     /* lo pone arriba del svg, ajusta según necesites */
+    left: 50%;                   
+    transform: translateX(-50%);  
+    background-color: var(--color_5);
+    padding: 10px;
     border-radius: 0 0 20px 20px;
-    text-align: left;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
 
-/*  Contenido abajo de sobre el proyecto */
-.titulo-proyecto p {
-  color: #000;
-  font-family: "IBM Plex Mono";
-  font-size: 16px;
-  font-style: normal;
+
+.titulo-sobre-proyecto h1, .titulo-creditos h1{
+  color: var(--color_3);
+}
+
+.texto-contenedor{
   font-weight: 600;
-  line-height: 149%; /* 23.84px */
-  padding-right: 70px;
-  text-align: left;
-    margin-left: 70px;
-
 }
 
- /* Título "Equipo de este proyecto" */
-/* Fondo rojo solo al título "Equipo de este proyecto" */
+.titulo-creditos{
+    position: relative;                  
+    background-color: var(--color_5);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
 
-.equipo-pro1 {
-  text-align: left;  /* Alineamos el contenedor "segundo titulo"a la izquierda */
-  padding-left: 70px;
+#creditos{
+  margin-top: 28px;
+  margin-bottom: 48px;
+}
+
+.equipo{
+  text-align: center;
+}
+
+.equipo-contenedor{
+  padding-top: 32px;
+}
+
+.equipo h2{
+  padding: 24px;
+}
+
+ .titulo-equipo{
+    margin-bottom: -20px;
+    margin-top: 32px;
+  }
+
+
+
+/*parte rsponsiva*/
+
+@media (min-width:360px){
   
-}
 
-.equipo-pro1 h2 {
-  background-color: var(--color_5); /* Fondo rojo */
-  color: white;  /* Color de texto blanco */
-  text-align: left; /* Alineamos el texto a la izquierda */
-  padding: 10px 20px; /* Añadimos espacio alrededor del texto */
-  margin: 0; 
-  display: inline; 
-  border-radius: 0 20px 20px 3px; /* Bordes redondeados */
-}
-
-
-/* Para el contenido "texto-equipo", sin fondo */
-.texto-equipo {
-  background-color: transparent; 
-  color: black;  
-  text-align: left; /* Alineamos el texto a la izquierda */
-  padding: 20px 70px; /* Añadimos espacio alrededor del texto */
-  margin-top: 0; /* Sin margen superior */
-  margin-left: 0; /* Alineación sin margen extra */
-  font-family: "IBM Plex Mono";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-}
-
-
-/* Contenedor para las imágenes del equipo */
-.imagenes-equipo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Alinea las imágenes al centro */
-  gap: 30px; /* Espacio entre imágenes */
-  align-items: center; /* Centrado vertical de las imágenes */
-}
-
-/* 3imágenes sobre el proyecto */
-.imagen1, .imagen2, .imagen3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagen1 {
-  width: 672px;
-  height: 672px;
-  justify-content: center;
-  align-items: center;
-  color: var(--Marron_oscuro, #452829);
-  text-align: center;
-
-/* karatinah3 */
-font-family: 'Karantina';
-font-size: 33.18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.imagen2, .imagen3 {
-  height: 308px;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.contenedorimg1 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-.columna {
-  display: flex;
-  flex-direction: column;  
-  align-items: center;
-  gap: 15px;
-}
-
-/* Titulos arriba de nuestras fotos */
-.nombre1, .nombre2, .nombre3, .nombre4, .nombre5, .nombre6, .nombre7, .nombre8, .nombre9, .nombre10, .nombre11 {
-  color: var(--color_1);
-  font-family: "IBM Plex Mono";
-  font-size: 19.2px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-}
-
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-  .imagenes-equipo {
-      flex-direction: column; /* Pone las imágenes en columna */
-      gap: 20px; /* Menor separación */
-  }
-
-  .imagen {
-      width: 90%;
-      height: 150px;
-  }
-}
-
-/* Distribuir las filas con flexbox "Sirve para ordenar, alinear y espaciar elementos dentro de un contenedor de forma flexible y responsiva */
-.equipo {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centrado de los miembros */
-  justify-content: space-evenly;
-}
-
-/* Fila 1: Un miembro */
-.fila-1 {
-  display: flex;
-  justify-content: center;  /* Solo un miembro centrado */
-  width: 100%;
-}
-.fila-1 .miembro {
-  margin-left: 0; /* Asegúrate de que no haya margen izquierdo adicional */
-}
-
-.fila-1 .foto-perfil {
-  margin-left: -23px; /* Alinea la imagen (circular) hacia la izquierda */
-}
-
-/* Fila 2  Dos miembros */
-
-.fila-2 {
-  display: flex;
-  justify-content: flex-start; /* Mueve todo hacia la izquierda */
-}
-
-.fila-2 .miembro2, .fila-2 .miembro3 {
-  margin-left: 0; /* Asegúrate de que no haya margen adicional */
-}
-
-.fila-2 .foto-perfil {
-  margin-left: 20px; /* Alinea las imágenes a la izquierda */
-
-}
-/* Fila 3  Dos miembros */
-
-.fila-3 {
-  display: flex;
-  justify-content: flex-start; /* Mueve todo hacia la izquierda */
-}
-
-.fila-3 .miembro2, .fila-2 .miembro3 {
-  margin-left: 0; /* Asegúrate de que no haya margen adicional */
-}
-
-.fila-3 .foto-perfil {
-  margin-left: 20px; /* Alinea las imágenes a la izquierda */
-
-}
-
-/* Fila 2 y 3: Dos miembros */
-.fila-2, .fila-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  width: 100%; /* Espacio */
-  gap: 30px;
-}
-.Equipo-Diseño{
-  text-align: center;
-  margin-bottom: 20 px;
-}
-.fila-4 {
-  display: flex;
-  justify-content:flex-end; /* Mueve todo hacia la izquierda */
-  gap: 30px;
-  width: 100px;
-}
-
-.fila-4 .miembro6,.fila-4 .miembro7,.fila-4 .miembro8 {
-  margin-left: 60px; /* Alinea las imágenes a la izquierda */
-}
-
-/* Fila 4 y 5: Tres miembros */
-.fila-4, .fila-5 {
-  display: flex;
-  justify-content: center; 
-  width: 100%;
-  gap: 30px;
-  flex-direction: row;
-  width: 100%;
-}
-
-
-
-
-.Equipo-Desarrollo{
-  text-align: center;
-  margin-bottom: 20 px;
-}
-.fila-5 {
-  display: flex;
-  justify-content:center; /* Mueve todo hacia la izquierda */
-  gap: 50px;
-  width: 100px;
-  margin-left: 50px;
-}
-
-.fila-5 .miembro9,.fila-5 .miembro10,.fila-5 .miembro11 {
-  margin-right: 60px; /* Alinea las imágenes a la izquierda */
-}
-
-/* Fila 4 y 5: Tres miembros */
-.fila-4, .fila-5 {
-  display: flex;
-  justify-content: center; 
-  width: 100%;
-  gap: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.titulo-docente{
-  margin-bottom: 20px;
-}
-/* Estilo para los miembros */
-.miembro {
-  text-align: center;
-  width: 250px; /* Ancho de los nombres abajo de las fotos */
-  margin-bottom: 0px;
-  margin-top: 20px;/* Espacio entre la imagen y el texto del miembro */
-}
-
-.foto-perfil {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 12px;
-  object-fit: cover;
-}
-
-.rol {
-  color: #000;
-  text-align: center;
-  font-family: "IBM Plex Mono";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 149%; /* 23.84px */
-}
-.titulo-docente{
-  color: var(--Marron_oscuro, #452829);
-text-align: center;
-/* karatinah3 */
-font-family:'Karantina';
-font-size: 33.18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  margin-bottom: 20px;
-}
-
-.Product-Owner{
-  color: var(--Marron_oscuro, #452829);
-text-align: center;
-/* karatinah3 */
-font-family:'Karantina';
-font-size: 33.18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 20px; /* Agregamos espacio debajo del título */
-
-
-}
-.Scrum-Master{
-  color: var(--Marron_oscuro, #452829);
-text-align: center;
-/* karatinah3 */
-font-family:'Karantina';
-font-size: 33.18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 20px; /* Agregamos espacio debajo del título */
-
-}
-.Equipo-Investigación{
-  color: var(--Marron_oscuro, #452829);
-  text-align: center;
-  /* karatinah3 */
-  font-family:'Karantina';
-  font-size: 33.18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 30px;
-}
-.Equipo-Diseño{
-  color: var(--Marron_oscuro, #452829);
-  text-align: center;
-  /* karatinah3 */
-  font-family:'Karantina';
-  font-size: 33.18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 30px;
-}
-.Equipo-Desarrollo {
-  color: var(--Marron_oscuro, #452829);
-  text-align: center;
-  /* karatinah3 */
-  font-family:'Karantina';
-  font-size: 33.18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 30px;
-
-}
-
-
-
-
-
-
-
-
-
-
-/* Estilo responsivo para pantallas medianas */
-@media (max-width: 768px) {
-  /* En pantallas medianas, adaptamos a una sola columna */
-  .fila-2, .fila-3, .fila-4, .fila-5 {
-      flex-direction: column; /* Cambiar a columna */
-      align-items: center;  /* Centrado */
-  }
-
-  /* Reduce el espacio entre las filas */
-  .equipo {
-      gap: 30px;
-  }
-}
-
-
-
-/* FIN SOBRE EL PROYECTO */
-
-
-
-
-
-/* MEDIA QUERIES Y BREAKPOINTS */
-
-/* Dispositivos móviles grandes */
-@media (min-width: 320px) {
-  .contenedor {
-  }
-}
-
-/* Tablets */
-@media (min-width: 768px) {
-  .contenedor {
-  }
-}
-
-/* Laptops y desktops pequeñas */
-@media (min-width: 1024px) {
-  header .menu_nav {
+  .img-movil{
     display: block;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .btn_menu_mobile {
+  .img-escritorio{
     display: none;
   }
-}
 
-/* Desktops y TVs grandes */
-@media (min-width: 1280px) {
-  .contenedor {
+  .img-movil div{
+    text-align: center;
+
   }
+
+  .texto-contenedor{
+    padding:20px 32px;
+    text-align: center;
+  }
+
+  
+/* TABLETS */
+@media (min-width:768px){
+    .contenedor{
+    }
 }
 
+.titulo-sobre-proyecto h1, .titulo-creditos h1{
+  font-size: var(--h2);
+}
+
+/* LAPTOPS Y DESKTOP PEQUEÑAS */
+@media (min-width:1024px){
+
+  .img-escritorio{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .img-escritorio div{
+      display: block;
+  }
+
+  .img-movil{
+    display: none;
+  }
+
+  .equipo{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--padding_5);
+  }
+
+  .titulo-sobre-proyecto h1, .titulo-creditos h1{
+    font-size: var(--h1);
+  }
+
+  .texto-contenedor{
+  padding:20px 70px;
+  text-align: left;
+}
+  
+}
+/* DESKTOPS Y TVS GRANDES */
+@media (min-width:1280px){
+    
+}
+
+
+/* FIN SOBRE EL PROYECTO*/ 
 
 /* INICIO  CREDITOS*/
 /* FIN CREDITOS*/
 
-/* Agregar espacio de 90px entre el contenido y el footer */
-.espacio-color {
-  height: 90px;
-  background-color: var(--color_3);
-}
 /* INICIO DE FOOTER */
 .footer {
   background: var(--color_4);
+  padding: 16px 24px 24px;   
   font-family: 'IBM Plex Mono', monospace;
   color: var(--color_1);
-  border-top: 4px dashed var(--color_1); /* Línea punteada superior */
-
+  border-top: 4px dashed var(--color_1); /* línea punteada superior */
 }
 
-/* parte superior: AUKI */
+/* parte superior: AUKI + texto */
 .footer_top {
   display: flex;
-  justify-content: center;  /* Alineamos AUKI a la izquierda */
+  justify-content: space-between;
   align-items: center;
-  gap: 300px;
-  padding: 16px 24px 24px;
-
-  border-bottom: 4px dashed var(--color_1); /* Línea punteada superior */
-
+  gap: 24px;
 }
 
+/* AUKI grande a la izquierda */
 .footer_logo_auki {
   font-family: 'Karantina', cursive;
-  font-size: 48px;
+  font-size: 48px;           /* un poco más chico que antes (56px) */
   letter-spacing: 0.3em;
   color: var(--color_1);
 }
 
-/* Separador */
-.footer_separator {
-  border-top: 4px dashed var(--color_1);
-  margin: 0px 0;
-}
-
-/* Texto legal en la parte inferior */
-.footer_bottom {
-  display: flex;
-  justify-content: space-between;  /* Distribuir los tres bloques */
-  align-items: center;
-  gap: 24px;
-  padding: 16px 24px 24px;
-
-}
-
-/* Alineación de la izquierda */
-.footer_left_text {
-  flex: 1;
-  text-align: left;
-}
-
-/* margen del footer de arriba */
-.ultim {
-  margin-bottom: 90px;
-}
-
-
-/* Alineación al centro */
-.footer_center_text {
-  flex: 1;
-  text-align: center;
-}
-
-/* Alineación a la derecha */
-.footer_right_text {
-  flex: 1;
+/* Texto de la derecha */
+.footer_text {
+  font-size: 22px;           /* en vez de var(--h4) para que no sea tan grande */
   text-align: right;
 }
 
-/* Responsive: en pantallas pequeñas, reorganizamos los textos */
+/* Línea punteada horizontal del medio */
+.footer_separator {
+  border-top: 4px dashed var(--color_1);
+  margin: 16px 0 20px;       
+}
+
+/* Texto de abajo centrado */
+.footer_bottom {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 14px;           
+}
+
+/* Responsive: en pantallas pequeñas, AUKI arriba y texto abajo */
 @media (max-width: 768px) {
-  .footer_top{
-    gap:24px;
+  .footer {
+    padding: 12px 16px 20px;
   }
-  .footer_bottom {
+
+  .footer_top {
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     gap: 8px;
   }
 
-  .footer_left_text, .footer_center_text, .footer_right_text {
+  .footer_text {
     text-align: left;
     font-size: 18px;
+  }
+
+  .footer_logo_auki {
+    font-size: 40px;
+  }
+
+  .footer_bottom {
+    font-size: 12px;
   }
 }
 /* FIN FOOTER */
@@ -1219,7 +1619,7 @@ margin-bottom: 20px; /* Agregamos espacio debajo del título */
 /* LAPTOPS Y DESKTOP PEQUEÑAS */
 @media (min-width:1024px){
   header .menu_nav{
-    display:block;      /* muestro las pastillas */ 
+    display:block;      /* muestro las pastillas */
   }
 
   .btn_menu_mobile{
@@ -1557,4 +1957,4 @@ a.slide_btn {
 
 /* FIN MI COLECCION - TANIA*/
 
-
+}
