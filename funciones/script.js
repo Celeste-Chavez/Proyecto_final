@@ -326,7 +326,7 @@ document.addEventListener("DOMContentLoaded", cargarCreditos);
 
 
 //CARGA DE DATOS A LA PAGINA CONTENIDO
-
+/*
 async function cargarHistoria4() {
   try {
     const respuesta = await fetch("../datos/leyendasmitos.json");
@@ -338,7 +338,7 @@ async function cargarHistoria4() {
     // INICIO – Título
     const inicioTitulo = document.querySelector(".inicio_titulo");
     inicioTitulo.querySelector("h3").textContent = historia.titulo;
-    
+
     // INICIO – Categoría
     const inicioCategoria = document.querySelector(".inicio_categoria");
     inicioCategoria.querySelector("h4").textContent = historia.categoria;
@@ -348,10 +348,10 @@ async function cargarHistoria4() {
     inicioCategoria.querySelector("p").textContent = historia.frase_descriptiva;
 
     // INICIO – Imagen de apoyo
-    /*const inicioImagen = document.querySelector(".inicio_imagen");
+    const inicioImagen = document.querySelector(".inicio_imagen");
     if (Array.isArray(historia.imagenes_apoyo)) {
       inicioImagen.src = historia.imagenes_apoyo[0];
-    }*/
+    }
 
     // CONTENIDO – Texto
     const contenidoTexto = document.querySelector(".contenido_texto");
@@ -362,4 +362,4 @@ async function cargarHistoria4() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", cargarHistoria4); 
+document.addEventListener("DOMContentLoaded", cargarHistoria4); */
