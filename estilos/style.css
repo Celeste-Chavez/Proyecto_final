@@ -1403,7 +1403,7 @@ line-height: normal;
 }
 
 
-.titulo-sobre-proyecto h1, .titulo-creditos h1{
+.titulo-sobre-proyecto h1, .titulo-creditos h1, .titulo-creditos-escritorio h1{
   color: var(--color_3);
 }
 
@@ -1416,7 +1416,7 @@ line-height: normal;
     background-color: var(--color_5);
     padding: 10px;
     border-radius: 0 20px 20px 0;
-    display: inline-flex;
+
     flex-direction: column;
     align-items: center;
     margin-bottom: 28px;
@@ -1429,10 +1429,12 @@ line-height: normal;
 
 .equipo{
   text-align: center;
+  gap: var(--padding_4);
 }
 
 .equipo-contenedor{
   padding-top: 32px;
+  padding: var(--padding_5) var(--padding_6) 0 var(--padding_6);
 }
 
 .equipo h2{
@@ -1444,6 +1446,16 @@ line-height: normal;
     margin-top: 32px;
   }
 
+
+.titulo-creditos-escritorio{
+  position: relative;                  
+    background-color: var(--color_5);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
 
 
 /*parte rsponsiva*/
@@ -1471,16 +1483,30 @@ line-height: normal;
     text-align: center;
   }
 
+  .titulo-creditos{
+     display: inline-flex;
+  }
+
+  .titulo-creditos-escritorio{
+    display: none;
+  }
+
   
 /* TABLETS */
 @media (min-width:768px){
-    .contenedor{
-    }
-}
+     .titulo-creditos{
+     display: inline-flex;
+  }
 
-.titulo-sobre-proyecto h1, .titulo-creditos h1{
+  .titulo-creditos-escritorio{
+    display: none;
+  }
+
+  .titulo-sobre-proyecto h1, .titulo-creditos h1, .titulo-creditos-escritorio h1{
   font-size: var(--h2);
 }
+}
+
 
 /* LAPTOPS Y DESKTOP PEQUEÑAS */
 @media (min-width:1024px){
@@ -1507,7 +1533,7 @@ line-height: normal;
     gap: var(--padding_5);
   }
 
-  .titulo-sobre-proyecto h1, .titulo-creditos h1{
+  .titulo-sobre-proyecto h1, .titulo-creditos h1, .titulo-creditos-escritorio h1{
     font-size: var(--h1);
   }
 
@@ -1515,11 +1541,25 @@ line-height: normal;
   padding:20px 70px;
   text-align: left;
 }
+
+.titulo-creditos{
+    display: none;
+  }
+
+  .titulo-creditos-escritorio{
+     display: inline-flex;
+  }
   
 }
 /* DESKTOPS Y TVS GRANDES */
 @media (min-width:1280px){
-    
+    .titulo-creditos{
+    display: none;
+  }
+
+  .titulo-creditos-escritorio{
+     display: inline-flex;
+  }
 }
 
 
