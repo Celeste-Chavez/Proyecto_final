@@ -148,7 +148,7 @@
 }
 
 body{
-    background-color: var(--color_4); /* agregar el color*/
+    background-color: var(--color_3); /* arregle el color de fondo para que todas las paginas tengan este color*/
     font-family: 'IBM Plex Mono';  /*agregar tipografia*/
 }
 
@@ -1752,14 +1752,16 @@ h1 ,h2{
   padding: 10px;
   border-radius: 0 0 20px 20px;
   display: inline-flex;
-  font-size: var(--h1);
+  font-size: var(--h4);
 
 }
 
 .card-fila{
   display: flex;
-  justify-content: space-between; /* Separa los elementos uniformemente */
+ /* justify-content: space-between;  Separa los elementos uniformemente */
   margin-top: var(--padding_6);
+  gap: 88px; /* controla la distancia entre los elementos */
+  justify-content: center;
 }
 
 .coleccion{
@@ -1906,7 +1908,7 @@ a.slide_btn {
 
 .titulo-coleccion{
   padding-top: 0px;
-  font-size: var(--h2);
+  font-size: var(--h3);
   text-align: center;
   top: 0px;
   margin-bottom: var(--padding_6);
