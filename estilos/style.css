@@ -1018,6 +1018,15 @@ h1 ,h2{
     align-items: center;
 }
 
+.btn-icon svg path {
+    transition: fill 0.2s ease;
+}
+
+.btn-icon:hover svg path {
+    fill: #EACBBB; /* cambia el color del icono al pasar el mouse */
+}
+
+
 .btn-icon-perfil{
   transform: translate(70%, -150%); /* (X, Y) */
 }
@@ -1029,7 +1038,8 @@ h1 ,h2{
 .perfil-caja-texto{
   text-align: center;
   left: 50%;
-  background: var(--color_3);
+  /*background: var(--color_3);*/
+  background: #EACBBB;
   position: relative;
   left: 50%;                   
   transform: translateX(-50%);  /* Ajusta para centrar perfectamente */
@@ -1195,14 +1205,50 @@ a.slide_btn {
   margin: 0px auto;
   width: 360px;
 }
-.perfil-caja-texto{
+ /*.perfil-caja-texto{
   background: none;
-   /* Ajusta para centrar perfectamente */
+   
   width: 304px;
   padding: var(--padding_6); 
   color: var(--color_3);  
-  padding-bottom: 40%;        
+  padding-bottom: 40%;  
+   overflow: hidden;       
+} */
+
+/*.perfil-caja-texto {
+    background: none;
+    width: 304px;
+    padding: var(--padding_6);
+    color: var(--color_3);
+    height: 140px;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
+
+
+.perfil-caja-texto p {
+    white-space: pre-wrap;    
+    word-wrap: break-word;     
+    overflow-wrap: break-word;
+} */
+
+.perfil-caja-texto {
+    width: 304px;
+    max-width: 100%;
+    min-height: 80px;
+    padding: var(--padding_6);
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    overflow-y: auto; /* opcional si quieres scroll */
+}
+
+.perfil-caja-texto p {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+
 .btn-icon-descripcion{
   transform: translate(-30%, -150%); /* (X, Y) */
 }
@@ -1234,7 +1280,17 @@ a.slide_btn {
 
 }
 
-/*PARTE PARA HACER LA PRUEBA*/
+/*PARTE DE ESTILO PARA LA CAJA DE TEXTO DE DESCRIPCION*/
+
+.textarea-descripcion {
+    width: 100%;
+    min-height: 80px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+}
 
 
 
@@ -1244,10 +1300,17 @@ a.slide_btn {
 }
 }
 /* TABLETS */
-@media (min-width:768px){
-    .contenedor{
+@media (max-width: 768px) {
+    .perfil-caja-texto {
+        width: 100%;
+        min-height: auto;
+        padding: var(--padding-2);
+        padding-bottom: 40%;
+        background-color: var(--color_1);
+        color: var(--color_3);
     }
 }
+
 /* LAPTOPS Y DESKTOP PEQUEÑAS */
 @media (min-width:1024px){
   header .menu_nav{

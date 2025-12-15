@@ -363,3 +363,88 @@ async function cargarHistoria4() {
 }
 
 document.addEventListener("DOMContentLoaded", cargarHistoria4); */
+
+//PARA EDITAR IMAGEN DE PERFIL
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const btnEditar = document.querySelector(".btn-icon-perfil");
+    const avatar = document.getElementById("avatar");
+
+    if (!btnEditar || !avatar) {
+        console.error("No se encontraron los elementos del perfil");
+        return;
+    }
+
+    const inputImagen = document.createElement("input");
+    inputImagen.type = "file";
+    inputImagen.accept = "image/*";
+    inputImagen.style.display = "none";
+    document.body.appendChild(inputImagen);
+
+    btnEditar.addEventListener("click", function (e) {
+        e.preventDefault();
+        inputImagen.click();
+    });
+
+    inputImagen.addEventListener("change", function () {
+        const archivo = this.files[0];
+        if (!archivo) return;
+
+        const lector = new FileReader();
+        lector.onload = function (e) {
+            avatar.src = e.target.result;
+        };
+        lector.readAsDataURL(archivo);
+    });
+
+});
+
+//PARA CAMBIAR LA INFORMACION DE DESCRIPCION 
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const btnEditarDesc = document.querySelector(".btn-icon-descripcion");
+    const cajaTexto = document.querySelector(".perfil-caja-texto p");
+
+    if (!btnEditarDesc || !cajaTexto) {
+        console.error("No se encontró la descripción");
+        return;
+    }
+
+    btnEditarDesc.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        // Evita abrir varios textarea
+        if (cajaTexto.querySelector("textarea")) return;
+
+        const textoActual = cajaTexto.innerText;
+
+        const textarea = document.createElement("textarea");
+        textarea.value = textoActual;
+        textarea.className = "textarea-descripcion";
+
+        cajaTexto.innerHTML = "";
+        cajaTexto.appendChild(textarea);
+
+        textarea.focus();
+
+        // Guardar al perder foco
+        textarea.addEventListener("blur", guardarTexto);
+
+        // Guardar con Enter (Shift+Enter = salto de línea)
+        textarea.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                guardarTexto();
+            }
+        });
+
+        function guardarTexto() {
+            const nuevoTexto = textarea.value.trim() || "Sin descripción";
+            cajaTexto.textContent = nuevoTexto;
+            //cajaTexto.innerHTML = nuevoTexto.replace(/\n/g, "<br>");
+        }
+    });
+
+});
