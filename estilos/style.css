@@ -525,26 +525,498 @@ line-height: normal;
 /* FIN INDEX - TANIA*/
 
 
+
 /* INICIO  LEYENDAS y mitos GEMA */ 
 
+.mistica{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  padding: 16px;
+  background-color:var(--color_1) ;
+  color: var(--color_3);
+  gap: var(--gap-1);
+}
+.mistica_titulo{
+  color: var(--color_3);
+  text-align: center;
+  font-family: Karantina;
+  font-size: 39.81px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
+}
+.mistica_imagen{}
+.mistica_texto{
+  color: var(--color_3);
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 149%; /* 23.84px */
+}
+
+.mistica_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  /*padding: 16px;*/
+  background-color:var(--color_1) ;
+  color: var(--color_3);
+}
+.mistica_cards_1{
+  display: flex;
+  /*width: 360px;
+  height: 665px;*/
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: var(--gap-1);
+
+}
+.mistica_cards_1_titulo{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  left: 0%;*/
+  display:flex;
+  width: 250px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color_5);
+  padding: 40px 16px 65px 16px;
+  gap: var(--gap-1);
+  color: var(--color_3);
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: -15%;
+  
+  /*position: relative;
+  top: 10%;                     /* lo pone arriba del svg, ajusta según necesites 
+  left: 50%;                   
+  transform: translateX(-50%);  
+  background-color: var(--color_5);
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  z-index: 100; */
+
+
+}
+.mistica_cards_1_imagen{
+  /*display: flex;
+  width: 280px;
+  height: 423px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  display: block;
+  position: relative;
+  
+  z-index: 2;
+  
+}
+.mistica_cards_1_texto{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  bottom: -50;
+  left: 0%;*/
+  display: flex;
+  background-color: var(--color_3);
+  color: var(--color_1);
+  width: 253px;
+  padding: 50px 16px 16px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-1);
+  border-radius: 0px 0 20px 20px;
+  margin-top: -15%;
+  
+}
+.btn-mistico_1{
+  padding: 16px;
+  text-decoration: none;
+  background-color: var(--color_5);
+  color: var(--color_4);
+  border-radius: 0px 10px 10px 10px;
+  font-family: "IBM Plex Mono";
+  font-size: 19.2px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.btn-sagrada_1{
+  padding: 16px;
+  text-decoration: none;
+  background-color: var(--color_5);
+  color: var(--color_4);
+  border-radius: 0px 10px 10px 10px;
+  font-family: "IBM Plex Mono";
+  font-size: 19.2px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+
+.mistica_cards_2{}
+.mistica_cards_2_titulo{}
+.mistica_cards_2_imagen{}
+.mistica_cards_2_texto{
+  
+}
+
+.mistica_cards_3{}
+.mistica_cards_3_titulo{}
+.mistica_cards_3_imagen{}
+.mistica_cards_3_texto{}
+
+.sagrada{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  padding: 16px;
+  background-color:var(--color_3) ;
+  color: var(--color_1);
+  gap: var(--gap-1);
+  
+}
+.sagrada_titulo{
+  color: var(--color_1);
+  text-align: center;
+  font-family: Karantina;
+  font-size: 39.81px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sagrada_texto{
+  color: var(--color_1);
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 149%; /* 23.84px */
+}
+.sagrada_imagen{}
+
+.sagrada_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  padding: 25px;
+  background-color:var(--color_3) ;
+  color: var(--color_1);
+}
+.sagrada_cards_1{
+  display: flex;
+  /*width: 360px;
+  height: 665px;*/
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-1);
+}
+.sagrada_cards_1_titulo{
+  /*position: relative;
+  z-index: 1;
+  margin-bottom: -10%;*/
+}
+.sagrada_cards_1_imagen{
+  display: block;
+  position: relative;
+
+  z-index: 2;
+}
+.sagrada_cards_1_texto{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  left: 0%;*/
+  display: flex;
+  background-color: var(--color_1);
+  color: var(--color_3);
+  width: 253px;
+  padding: 40px 16px 16px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-1);
+  border-radius: 0px 0 20px 20px;
+  margin-top: -15%;
+}
+
+.sagrada_cards_2{}
+.sagrada_cards_2_titulo{}
+.sagrada_cards_2_imagen{}
+.sagrada_cards_2_texto{}
+
+.sagrada_cards_3{}
+.sagrada_cards_3_titulo{}
+.sagrada_cards_3_imagen{}
+.sagrada_cards_3_texto{}
+
+.historica{
+  
+}
+.historica_texto{}
+.historica_imagen{}
+
+.historica_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin: 16px;*/
+  /*padding: 16px;*/
+  background-color:var(--color_3) ;
+  color: var(--color_1);
+}
+.historica_cards_1{
+  display: flex;
+  /*width: 360px;
+  height: 665px;*/
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: var(--gap-1);
+}
+.historica_cards_1_titulo{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  left: 0%;*/
+  display:flex;
+  width: 250px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color_5);
+  padding: 20px 16px 30px 16px;
+  gap: var(--gap-1);
+  color: var(--color_3);
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: -10%;
+}
+.historica_cards_1_imagen{
+  display: block;
+  position: relative;
+  
+  z-index: 2;
+  
+}
+.historica_cards_1_texto{
+  position: relative;
+  z-index: 1;
+  /*top: 0%;
+  bottom: -50;
+  left: 0%;*/
+  display: flex;
+  background-color: var(--color_1);
+  color: var(--color_3);
+  width: 253px;
+  padding: 50px 16px 16px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-1);
+  border-radius: 0px 0 20px 20px;
+  margin-top: -15%;
+}
+
+.hisorica_cards_2{}
+.historica_cards_2_titulo{}
+.historica_cards_2_imagen{}
+.historica_cards_2_texto{}
+
+/* SECCION RESPONSIVE*/
+/* DESKTOP*/
+@media (min-width: 1200px) {
+  .mistica{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    padding: 70px;
+    
+  }
+  .mistica_titulo{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding: 150px 0px 0px 50px;
+  }
+  .mistica_imagen{
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    align-items: center;
+  }
+  .mistica_texto{
+    grid-row: 2/ 3;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding: 0px 0px 0px 50px;
+  }
+  .mistica_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    padding:0px 70px 70px 70px;
+  }
+  .mistica_cards_1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .mistica_cards_2{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .mistica_cards_3{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    
+  }
+
+  .mistica_cards_1_titulo{
+    display: flex;
+    width: 250px;
+    height: 92px;
+    padding: 40px 16px 65px 16px;
+  }
+  .mistica_cards_1_texto{
+  }
+
+  /*.btn-mistico_1{
+    color: var(--color_3);
+    padding: 0px;
+    background-color: var(--color_3);
+  }
+  .btn-sagrada_1{
+    color: var(--color_1);
+    padding: 0px;
+    background-color: var(--color_1);
+  }*/
+  .sagrada{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    padding: 70px;
+    
+  }
+  .sagrada_titulo{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding: 100px 0px 0px 50px;
+  }
+  .sagrada_imagen_desktop{
+    grid-row: 1/ 4;
+    grid-column: 2/ 3;
+    /*align-items: center;*/
+  }
+  .sagrada_texto{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding: 0px 0px 0px 50px;
+  }
+  .sagrada_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: none;
+    padding:0px 70px 70px 70px;
+  }
+  .sagrada_cards_1{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .sagrada_cards_2{
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+  }
+  /*.sagrada_cards_3{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+  }*/
+  .historica_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: none;
+    padding:0px 70px 70px 70px;
+  }
+  .historica_cards_1{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+  }
+  .historica_cards_2{
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+  }
+
+  .mistica_cards_1:hover{
+  transform: scale(1.05);
+  }
+  .sagrada_cards_1:hover{
+  transform: scale(1.05);
+  }
+  .historica_cards_1:hover{
+  transform: scale(1.05);
+  }
+}
+
+/* TABLETS*/
+@media (min-width: 768px){}
+
+/* LAPTOPS Y DESKTOPS PEQUEÑAS*/
+@media (min-width: 1024px) {}
+
+/* DESKTOPS Y TV GRANDES*/
+@media (min-width: 1280px) {}
 
 /* FIN LEYENDAS*/
-
-/*-------------------------------------------*/
-/* INICIO CONTENIDO LEYENDAS*/
-
-
-/* FIN CONTENIDO LEYENDAS*/
-/*-------------------------------------------*/
-
 
 
 /* INICIO  LEYENDAS Y MITOS */
 
 
 
+/* Caja interna con imagen + texto + link */
+.caja {
+    display: flex;
+    gap: var(--gap-1);
+}
 
+.caja a {
+  
+}
+
+/* Imagen a la derecha */
+.imagenLM {
+    display: inline;
+    width: 300px;
+}
 
 
 
