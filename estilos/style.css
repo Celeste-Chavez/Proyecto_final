@@ -1302,6 +1302,461 @@ line-height: normal;
 /* FIN LEYENDAS*/
 
 
+/* CONTENIDO LEYENDAS ---- GEMA*/
+
+/*LEYENDA_1*/
+.intro_leyenda_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 16px;
+
+  background-color: var(--color_1);
+
+  gap: 16px;
+}
+.intro_leyenda_1_titulo{
+  display: flex;
+  height: auto;
+  padding: 10px 24px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  background-color: var(--color_5);
+  color: var(--color_3);
+  border-radius: 20px 20px 0px 0px;
+
+  text-align: center;
+  font-family: Karantina;
+  font-size: 33.18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.intro_leyenda_1_subtitulo{
+  display: flex;
+  padding: 10px 32px 10px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  margin-top: -5%;
+
+  background-color: var(--color_4);
+  color: var(--color_1);
+  border-radius: 0 0 10px 10px;
+
+  text-align: center;
+  font-family: Karantina;
+  font-size: 33.16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.intro_leyenda_1_texto{
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--color_4);
+  font-family: "IBM Plex Mono";
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130.631%; /* 17.413px */
+  letter-spacing: -0.267px;
+}
+.intro_leyenda_1_imag{
+  display: flex;
+  padding: 0 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.textos_leyenda_1{
+
+}
+.textos_leyenda_1_frase{
+  display: flex;
+  padding: 16px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  color: var(--color_1);
+  font-family: "IBM Plex Mono";
+  font-size: 23.04px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 128.46%; 
+
+ 
+}
+.linea_divisora{
+  display: flex;
+  
+  flex-direction: column;
+  gap: 24px;
+
+  width: 297px;
+  height: 3px;
+
+  border-top: 3px dashed #A46C49 ;
+  /*background: var(--color_1);*/
+
+ 
+}
+.textos_leyenda_1_descripcion{
+  display: flex;
+  padding: 8px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  font-family: "IBM Plex Mono";
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130.631%; /* 17.413px */
+  letter-spacing: -0.267px;
+}
+.textos_leyenda_1_resumen{
+  display: flex;
+  padding: 8px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  text-align: right;
+
+  font-family: "IBM Plex Mono";
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130.631%; /* 17.413px */
+  letter-spacing: -0.267px;
+}
+.textos_leyenda_1_audio{
+
+
+
+
+  #audioplayer{
+	width: 340px;
+	height: 60px;
+	margin: 50px auto auto auto;
+  border: solid var(--color_4);
+  background-color: var(--color_4);
+  border-radius: 20px;
+  }
+
+  #pButton{
+    height:60px; 
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+    color: var(--color_5);
+  }
+
+  .play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;
+    
+  }
+  .pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
+
+  #timeline{
+	  width: 260px;
+	  height: 20px;
+	  margin-top: 20px;
+	  float: left;
+	  border-radius: 15px;
+	  background: var(--color_3);
+  
+  }
+  #playhead{
+	  width: 18px;
+	  height: 18px;
+	  border-radius: 50%;
+	  margin-top: 1px;
+	  background:var(--color_5);
+
+  }
+}
+
+.datos_leyenda_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 75px 16px 0px;
+
+  gap: 24px;
+}
+.datos_leyenda_1_titulo{
+  display: flex;
+  width: 283px;
+  height: 92px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  /*gap: 16px;*/
+
+  background-color: var(--color_5);
+  color: var(--color_3);
+  border-radius: 0 0 20px 20px;
+
+  text-align: center;
+  
+  font-family: Karantina;
+font-size: 33.18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.datos_leyenda_1_card_1{
+  display: flex;
+  width: 296px;
+  height: auto;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+
+  background-color: var(--color_1);
+  border-radius: 20px;
+  border: 2px dashed var(--color_4);
+}
+.linea_divisora_2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 245px;
+  height: 3px;
+
+  border-top: 3px dashed var(--color_4) ;
+  /*background: var(--color_1);*/
+
+ 
+}
+.datos_leyenda_1_card_1_imag_1{}
+.datos_leyenda_1_card_1_titulo{
+  text-align: center;
+  width: 230px;
+  color: var(--color_3);
+  font-family: Karantina;
+  font-size: 39.81px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+.datos_leyenda_1_card_1_texto{
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+
+  text-align: center;
+  color: var(--color_4);
+  font-family: "IBM Plex Mono";
+  font-size: 13.33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130.631%; /* 17.413px */
+  letter-spacing: -0.267px;
+}
+
+.botones_leyenda_1{
+  display: flex;
+  width: 360px;
+  height: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.botones_leyenda_1_siguiente{
+  /*display: inline-flex;
+  justify-content: flex-end;*/
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+  
+ /* width: 360px;
+  height: 84px;*/
+  padding: 0 20px;
+  /*justify-content: space-between;*/
+  align-items: center;
+
+}
+.btn_desbloquear{
+  display: flex;
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+
+  background-color: var(--color_5);
+  border-radius: 15px 0 15px 15px;
+  color: var(--color_3);
+  font-family: "IBM Plex Mono";
+font-size: 19.2px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+@media (min-width: 1200px) {
+  .intro_leyenda_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    padding:70px 150px 70px 350px;
+    column-gap: 200px;
+  } 
+
+  .intro_leyenda_1_titulo{
+    grid-row:1 / 2 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_subtitulo{
+    grid-row:2 / 3 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_texto{
+    grid-row:3 / 4 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_imag{
+    grid-row:1 / 5 ;
+    grid-column: 2 / 3;
+  }
+
+  .textos_leyenda_1{
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    border: none;
+    padding:10px 150px 70px 150px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .textos_leyenda_1_frase{
+    align-items: flex-start; 
+    
+    /* 2. TEXTO: Asegura que los párrafos internos se alineen a la izquierda */
+    text-align: left;
+    
+    /* 3. ESPACIO: Define exactamente 20px a la izquierda */
+    padding-left: 20px; 
+    
+    /* Mantiene el padding derecho o lo ajusta según necesites */
+    padding-right: 20px; 
+    
+    /* 4. ANCHO: Fundamental. Rompe cualquier ancho fijo anterior para usar toda la pantalla */
+    width: 100%; 
+    box-sizing: border-box;
+  }
+  .linea_divisora{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  width: 1200px;
+  height: 3px;
+
+  border-top: 3px dashed #A46C49 ;
+  /*background: var(--color_1);*/
+
+ 
+}
+  .textos_leyenda_1_descripcion{}
+  .textos_leyenda_1_resumen{}
+  .textos_leyenda_1_audio{}
+
+
+  .datos_leyenda_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: none;
+    padding: 0px 70px 70px 70px;
+    /*column-gap: 200px;*/
+  }
+  .datos_leyenda_1_titulo{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+  }
+  .datos_leyenda_1_card_1{
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+  }
+  .datos_leyenda_1_card_2{
+    grid-row: 2 / 4;
+    grid-column: 4 / 5;
+  }
+
+  .botones_leyenda_1{
+    width: 100%;  /* Anula los 360px del móvil */
+    max-width: 1500px; /* Opcional: Para que no se estire infinitamente en pantallas ultra anchas */
+    margin: 0 auto; /* Centra el contenedor si es menor a la pantalla */
+    
+    /* Cambiamos la orientación para manejar el espacio horizontalmente */
+    flex-direction: row; 
+    
+    /* Esta es la clave: empuja todo el contenido a la derecha */
+    justify-content: flex-end; 
+    
+    /* El espacio de 20px entre el botón y el borde de la pantalla */
+    padding-right: 75px; 
+    padding-bottom: 50px;
+    
+    /* Asegura que el padding no sume al ancho total y cause scroll horizontal */
+    box-sizing: border-box;
+  }
+  .botones_leyenda_1_siguiente{
+    
+   margin-left: 0; 
+    margin-right: 0;
+    
+    /* Quitamos cualquier padding extra que conflictúe */
+    padding: 0;
+  }
+  .btn_desbloquear{
+    
+  }
+
+}
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1600px) {}
+/*FIN CONTENIDOS LEYENDAS*/
+
 /* INICIO  LEYENDAS Y MITOS */
 
 
@@ -1750,8 +2205,8 @@ h1 ,h2{
 
 }
 
-#perfil h1, h2, #avatar{
-  padding-bottom: 32px;
+#perfil h1, #perfil h2, #avatar{
+  padding-bottom: 32px; /*lo comente porque perjudica a mi centrado de titulo*/
   text-align: center;
 }
 
