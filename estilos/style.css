@@ -2,11 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
 
-
-
 /*VARIABLES*/
 :root{
-
     /*Paleta de colores*/ 
     --color_1:#452829; /* cambiar colores*/
     --color_2:#57595B;
@@ -22,7 +19,6 @@
     --color-neo_4:#B1FD03;
     --color-neo_5:#FF8651;
     --color-neo_6:#F6F6F6;
-    
 
     --padding-1: 8px;   /* pequeño */
     --padding-2: 12px;  /* medio pequeño */
@@ -31,7 +27,6 @@
     --padding_4: 24px;  /* amplio */
     --padding_5: 32px;  /* muy amplio */
     --gap-1: 20px;      /* separación estándar para layouts */
-
 
     /*Escala tipografica*/
 
@@ -647,44 +642,7 @@ line-height: normal;
   margin-top: -25%;
   
 }
-.btn-mistico_1{
-  /*padding: 16px;
-  text-decoration: none;
-  background-color: var(--color_5);
-  color: var(--color_4);
-  border-radius: 0px 10px 10px 10px;
-  font-family: "IBM Plex Mono";
-  font-size: 19.2px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /*margin: 16px;*/
-  padding: 16px;
-  /*background-color:var(--color_1) ;*/
-  color: var(--color_3);
-  gap: var(--gap-1);
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-}
 
-
-
-
-.mistica_cards_2{}
-.mistica_cards_2_titulo{}
-.mistica_cards_2_imagen{}
-.mistica_cards_2_texto{
-  
-}
-
-.mistica_cards_3{}
-.mistica_cards_3_titulo{}
-.mistica_cards_3_imagen{}
-.mistica_cards_3_texto{}
 
 .sagrada_cards{
   display: flex;
@@ -693,7 +651,9 @@ line-height: normal;
   padding: 16px;
   
 }
-.btn-sagrada_1{
+
+
+.btn_mitos_card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -706,6 +666,12 @@ line-height: normal;
   cursor: pointer;
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
+
+.btn_mitos_card:hover {
+  transform: scale(1.05);
+}
+
+
 .sagrada{
   display: flex;
   flex-direction: column;
@@ -735,36 +701,60 @@ line-height: normal;
   font-weight: 600;
   line-height: 149%; /* 23.84px */
 }
-.sagrada_imagen{}
 
-.sagrada_cards{
-  display: flex;
-  flex-direction: column;
+.sagrada_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
   /*margin: 16px;*/
   padding: 25px;
-  background-color:var(--color_3) ;
+  gap: 2rem;
+  background-color: var(--color_3);
   color: var(--color_1);
 }
-.sagrada_cards_1{
+.card_mitos_individual {
+  width: 280px;
+  margin: 0 auto;
   display: flex;
-  /*width: 360px;
-  height: 665px;*/
   padding: 16px;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
   gap: var(--gap-1);
 }
-.sagrada_cards_1_titulo{
-  /*position: relative;
-  z-index: 1;
-  margin-bottom: -10%;*/
+.mitos_cards_imagen {
+  align-items: center;
+  width: 280px;
+  height: auto;
+  display: block;
+  z-index: 3;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.mitos_cards_texto {
   position: relative;
   z-index: 1;
-  /*top: 0%;
-  left: 0%;*/
-  display:flex;
+  display: flex;
+  background-color: var(--color_1);
+  color: var(--color_3);
+  width: 250px;
+  padding: 40px 16px 16px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  gap: var(--gap-1);
+  border-radius: 0px 0 20px 20px;
+  margin-top: -60px;
+  
+}
+.mitos_cards_titulo {
+  margin-left: auto;
+  margin-right: auto;
+  transform: none;
+  position: relative;
+  z-index: 1;
+  display: flex;
   width: 250px;
   height: 92px;
   justify-content: center;
@@ -775,48 +765,9 @@ line-height: normal;
   gap: var(--gap-1);
   color: var(--color_3);
   border-radius: 20px 20px 0px 0px;
-  margin-bottom: -18%;
-}
-.sagrada_cards_1_imagen{
-  display: block;
-  position: relative;
+  margin-bottom: -60px;
 
-  z-index: 2;
 }
-.sagrada_cards_1_texto{
-  position: relative;
-  z-index: 1;
-  /*top: 0%;
-  left: 0%;*/
-  display: flex;
-  background-color: var(--color_1);
-  color: var(--color_3);
-  width: 253px;
-  padding: 40px 16px 16px 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: var(--gap-1);
-  border-radius: 0px 0 20px 20px;
-  margin-top: -20%;
-}
-
-.sagrada_cards_2{}
-.sagrada_cards_2_titulo{}
-.sagrada_cards_2_imagen{}
-.sagrada_cards_2_texto{}
-
-.sagrada_cards_3{}
-.sagrada_cards_3_titulo{}
-.sagrada_cards_3_imagen{}
-.sagrada_cards_3_texto{}
-
-.historica{
-  
-}
-.historica_texto{}
-.historica_imagen{}
 
 .historica_cards{
   display: flex;
@@ -1240,7 +1191,7 @@ line-height: normal;
   gap: var(--gap-1);
   color: var(--color_3);
   border-radius: 20px 20px 0px 0px;
-  margin-bottom: -18%;}
+  margin-bottom: -18%;
 }
   .mistica_cards_1_titulo{
     position: relative;
@@ -1279,6 +1230,7 @@ line-height: normal;
   border-radius: 0px 0 20px 20px;
   margin-top: -13%;
   
+}
 }
   .historica_cards_1_titulo{
   position: relative;
@@ -1546,18 +1498,12 @@ line-height: normal;
 }
 
 .datos_leyenda_1{
-  /*
-  display: flex;
-  flex-direction: column;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Simétrico 
-  gap: 24px;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
+  flex-wrap: wrap; 
   padding: 16px 20px; 
   gap: 24px;
   width: 100%; 
@@ -1594,12 +1540,11 @@ line-height: normal;
 }
 
 .datos_leyenda_1_card_1{
-  /*display: flex;
-  width: 296px;
-  height: auto;*/
   display: flex;
   width: 90%; 
   max-width: 320px;
+  flex-direction: column;
+  align-items: center;
   height: auto;
   padding: 24px;
   flex-direction: column;
@@ -1910,6 +1855,7 @@ line-height: normal;
 }
 
   .datos_leyenda_1{
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border: none;
@@ -1922,7 +1868,7 @@ line-height: normal;
   }
   .datos_leyenda_1_card_1{
     grid-row: 2 / 4;
-    grid-column: 2 / 3;
+    
   }
   .datos_leyenda_1_card_2{
     grid-row: 2 / 4;
