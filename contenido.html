@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="funciones/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_row">
+            <div class="logo">
+                <h1 class="logo_1">AUKI</h1>
+            </div>
+
+            <!-- NAV DESKTOP: pastillas -->
+            <nav class="menu_nav">
+                <ul class="menu_nav_ul">
+                    <li><a class="boton_menu" href="index.html">INICIO</a></li>
+                    <li><a class="boton_menu" href="leyendas.html">MITOS Y LEYENDAS</a></li>
+                    <li><a class="boton_menu" href="mi_coleccion.html">MI COLECCIÓN</a></li>
+                    <li><a class="boton_menu" href="sobre_el_proyecto.html">PROYECTO</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botón hamburguesa (solo mobile) -->
+            <button id="btn-menu" class="btn_menu_mobile">Menú</button>
+        </div>
+
+        <!-- MENÚ DESPLEGABLE LATERAL (mobile) -->
+        <nav class="menu_desplegable" id="menu-desplegable">
+            <ul class="menu_lista">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="leyendas.html">MITOS Y LEYENDAS</a></li>
+                <li><a href="mi_coleccion.html">MI COLECCIÓN</a></li>
+                <li><a href="sobre_el_proyecto.html">PROYECTO</a></li>
+            </ul>
+            <button class="cerrar-menu" id="cerrar-menu">CERRAR</button>
+        </nav>
+    </header>
+    <main>
+        <!--Intro de la leyenda-->
+        <section class="intro_leyenda_1">
+            <!--aquí se crea el contenido 1 de la página-->
+        </section>
+
+        <!--testos y frases de la leyenda-->
+
+        <!--cada <p> debe ser generada por el código-->
+        <section class="textos_leyenda_1">
+            <div class="textos_leyenda_1_frase">
+                <p>Lorem ipsum dolor sit amet consectetur ...</p>
+
+                <div class="linea_divisora"></div>
+            </div>
+            
+            <div class="textos_leyenda_1_descripcion">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta harum quibusdam neque amet possimus aperiam cum tempora numquam quam aliquam aspernatur, minima necessitatibus perferendis incidunt? Excepturi sequi repellat velit officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias fugit temporibus quo asperiores dolor quae ducimus consequuntur! Aut commodi hic obcaecati. Maiores, ab molestiae tenetur excepturi facere quod. Dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quis beatae exercitationem odio necessitatibus quae nisi dicta aspernatur suscipit. Repellat voluptatum tenetur quis explicabo, aspernatur sed obcaecati eius quam dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus adipisci est eveniet vero dicta. Sit totam excepturi reprehenderit neque qui ad non distinctio unde reiciendis laudantium. Alias sunt saepe laborum.</p>
+                <div class="linea_divisora"></div>
+            </div>
+            <div class="textos_leyenda_1_resumen">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ea eos neque maiores temporibus sapiente culpa tempora aliquam sit facilis! Natus veniam minus id sapiente. Similique perferendis ut harum nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel odio inventore quasi. Culpa, eius. Tempore delectus sed facilis! Omnis esse accusamus a nam delectus voluptates sed! Vitae, quos reiciendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum consectetur amet, placeat in, consequuntur animi laboriosam, at illo impedit natus error ad! Fugit ab molestiae minima rerum inventore quas beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quas, maxime mollitia illum sed placeat odit, nulla nostrum debitis ad impedit doloribus provident non ipsa! Enim asperiores magni praesentium cum!</p>
+            </div>
+            <div class="textos_leyenda_1_audio">
+                <!--unas cuantas páginas tienen audio y en otras el json dirá null, si dice null esta parte debe desaparecer-->
+                <audio id="music" preload="true">
+                    <source src="http://www.alexkatz.me/codepen/music/interlude.mp3">
+			        <source src="http://www.alexkatz.me/codepen/music/interlude.ogg">
+	            </audio>
+                <div id="audioplayer">
+	                <button id="pButton" class="play"></button>
+                    <div id="timeline">    
+  		                <div id="playhead"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--seccion datos curiosos-->
+
+        <section class="datos_leyenda_1">
+            <div class="datos_leyenda_1_titulo">
+                <h2 class="datos_leyenda_1_card_1_titulo_principal">Datos curiosos</h2>
+            </div>
+            
+        </section>
+
+        <!--SECCION DE PREGUNTAS,-->
+        <section class="seccion_juego">
+            <div class="preguntas_card">
+                <div class="pregunta_1">
+                    <p>Elige la palabra correcta para continuar.</p>
+                </div>
+                <div class="pistas">
+                    <p>PISTAS: 1=E, 2=K, 3=O</p>
+                </div>
+        
+                <div class="linea_divisora_pistas"></div>
+
+                <div class="contenedor_opciones">
+                    <div class="opcion_item">
+                        <span class="circulo_selector"></span>
+                        <p>EKOKE</p>
+                    </div>
+                    <div class="opcion_item">
+                        <span class="circulo_selector"></span>
+                        <p>OKEKE</p>
+                    </div>
+                    <div class="opcion_item">
+                        <span class="circulo_selector"></span>
+                        <p>EKOKE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION BOTONES DESBLOQUEAR Y ANTERIOR-->
+
+        <section class="botones_leyenda_1">
+            <div class="botones_leyenda_1_siguiente">
+                <a class="btn_desbloquear" href="">Desbloquear</a>
+            </div>
+            <div class="botones_leyenda_1_anterior">
+                
+            </div>
+        </section>
+
+        <script src="funciones/contenido.js"></script>
+    </main>
+    <footer class="footer footer_separator">
+        <div class="footer_top ">
+            <div class="footer_left">
+                <span class="footer_logo_auki">AUKI</span>
+            </div>
+            <div>
+                <p>El guardián de los mitos paceños</p>
+            </div>
+        </div>
+
+
+        <!-- Texto legal en la parte inferior -->
+        <div class="footer_bottom footer_separator">
+            <div class="footer_left_text">
+                <p>© 2025 Leyendas Bolivianas.</p>
+            </div>
+            <div class="footer_center_text">
+                <p>Hecho en La Paz, Bolivia.</p>
+            </div>
+            <div class="footer_right_text">
+                <p>Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
