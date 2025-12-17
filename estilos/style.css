@@ -1315,9 +1315,18 @@ line-height: normal;
   background-color: var(--color_1);
 
   gap: 16px;
+
+  
+}
+.contenedor_titulos{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto;
 }
 .intro_leyenda_1_titulo{
-  display: flex;
+  /*display: flex;
   height: auto;
   padding: 10px 24px 20px;
   justify-content: center;
@@ -1327,8 +1336,20 @@ line-height: normal;
 
   background-color: var(--color_5);
   color: var(--color_3);
+  border-radius: 20px 20px 0px 0px;*/
+
+  
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+
+  background-color: var(--color_5);
+  color: var(--color_3);
   border-radius: 20px 20px 0px 0px;
 
+  text-align: center;
   text-align: center;
   font-family: Karantina;
   font-size: 33.18px;
@@ -1337,7 +1358,7 @@ line-height: normal;
   line-height: normal;
 }
 .intro_leyenda_1_subtitulo{
-  display: flex;
+  /*display: flex;
   padding: 10px 32px 10px 32px;
   justify-content: center;
   align-items: center;
@@ -1348,6 +1369,21 @@ line-height: normal;
   background-color: var(--color_4);
   color: var(--color_1);
   border-radius: 0 0 10px 10px;
+
+  text-align: center;
+  */
+  display: flex;
+  padding: 10px 32px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  
+  
+  margin-top: 0; 
+
+  background-color: var(--color_4);
+  color: var(--color_1);
+  border-radius: 0 0 20px 20px; 
 
   text-align: center;
   font-family: Karantina;
@@ -1373,11 +1409,20 @@ line-height: normal;
   letter-spacing: -0.267px;
 }
 .intro_leyenda_1_imag{
+  /*
   display: flex;
   padding: 0 16px;
   flex-direction: column;
   align-items: center;
+  gap: 16px;*/
+
+  display: flex;
+  padding: 0 16px;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
   gap: 16px;
+  width: 100%;
 }
 
 
@@ -1501,26 +1546,43 @@ line-height: normal;
 }
 
 .datos_leyenda_1{
+  /*
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px 75px 16px 0px;
-
-  gap: 24px;
-}
-.datos_leyenda_1_titulo{
+  padding: 20px; /* Simétrico 
+  gap: 24px;*/
   display: flex;
-  width: 283px;
-  height: 92px;
-  padding: 16px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*gap: 16px;*/
+  
+  padding: 16px 20px; 
+  gap: 24px;
+  width: 100%; 
+  box-sizing: border-box;
+}
+.datos_leyenda_1_titulo{
+  /*display: flex;
+  width: 283px;
+  height: 92px;
+  padding: 16px;*/
+
+  display: flex;
+  width: 90%; 
+  max-width: 300px; 
+  height: auto; 
+  padding: 16px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 
   background-color: var(--color_5);
   color: var(--color_3);
   border-radius: 0 0 20px 20px;
+  
 
   text-align: center;
   
@@ -1532,8 +1594,12 @@ line-height: normal;
 }
 
 .datos_leyenda_1_card_1{
-  display: flex;
+  /*display: flex;
   width: 296px;
+  height: auto;*/
+  display: flex;
+  width: 90%; 
+  max-width: 320px;
   height: auto;
   padding: 24px;
   flex-direction: column;
@@ -1543,6 +1609,7 @@ line-height: normal;
   background-color: var(--color_1);
   border-radius: 20px;
   border: 2px dashed var(--color_4);
+  
 }
 .linea_divisora_2{
   display: flex;
@@ -1558,7 +1625,12 @@ line-height: normal;
 
  
 }
-.datos_leyenda_1_card_1_imag_1{}
+.datos_leyenda_1_card_1_imag_1{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .datos_leyenda_1_card_1_titulo{
   text-align: center;
   width: 230px;
@@ -1590,26 +1662,51 @@ line-height: normal;
 }
 
 .botones_leyenda_1{
-  display: flex;
+  /*display: flex;
   width: 360px;
   height: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 24px;*/
+  display: flex;
+  width: 100%; 
+  height: auto;
+  flex-direction: row; 
+  justify-content: flex-end; 
+  align-items: center;
+  
+  padding-right: 20px; 
+  box-sizing: border-box; 
   gap: 24px;
 }
 .botones_leyenda_1_siguiente{
   /*display: inline-flex;
   justify-content: flex-end;*/
-  display: block;
+  /*display: block;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 10px;*/
   
+  /*display: block;
+  margin: 0; 
+  padding: 0;
  /* width: 360px;
-  height: 84px;*/
+  height: 84px;
   padding: 0 20px;
-  /*justify-content: space-between;*/
+  /*justify-content: space-between;
+  align-items: center;*/
+
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row; 
+  justify-content: flex-end; 
   align-items: center;
+
+  
+  padding: 30px 10px 30px 0px; 
+  
+  box-sizing: border-box;
 
 }
 .btn_desbloquear{
@@ -1624,20 +1721,139 @@ line-height: normal;
   border-radius: 15px 0 15px 15px;
   color: var(--color_3);
   font-family: "IBM Plex Mono";
-font-size: 19.2px;
+  font-size: 19.2px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/*INICIO PREGUNTAS*/
+.seccion_juego {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: var(--color_3); 
+}
+
+
+.preguntas_card {
+  display: flex;
+  width: 100%;
+  max-width: 320px; 
+  padding: 30px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  background-color: var(--color_1); 
+}
+
+.pregunta_1 p {
+  color: var(--color_4); 
+  text-align: center;
+  font-family: Karantina;
+  font-size: 38px;
+  margin: 0;
+}
+
+.pistas p {
+  color: var(--color_4);
+  text-align: center;
+  
+  margin: 0;
+
+  font-family: "IBM Plex Mono";
+font-size: 24.88px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
 
 
+.linea_divisora_pistas {
+  width: 100%;
+  border-top: 2px dashed var(--color_4);
+  opacity: 0.5;
+}
+
+
+.contenedor_opciones {
+  
+  background-color: var(--color_4); 
+  border-radius: 15px;
+  padding: 20px 30px;
+  width: 80%; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  margin-bottom: 10px;
+}
+
+.opcion_item {
+  /*display: flex;
+  align-items: center;
+  gap: 15px;*/
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.circulo_selector {
+  
+
+  /*width: 22px;
+  height: 22px;
+  border: 3px solid var(--color_1); 
+  border-radius: 50%; /* Lo hace circular 
+  background-color: transparent;
+  display: inline-block;
+  flex-shrink: 0;*/
+
+  width: 20px;
+  height: 20px;
+  
+  background-color: var(--color_1); 
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+  
+  transition: all 0.3s ease; 
+  border: 2px solid transparent;
+}
+
+.opcion_item p {
+  /*color: var(--color_1);
+  font-family: Karantina;
+  font-size: 32px;
+  margin: 0;*/
+  /*color: var(--color_1); 
+  font-family: Karantina;
+  font-size: 32px;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;*/
+
+  font-family: Karantina;
+  font-size: 44.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.opcion_item.activo .circulo_selector {
+  
+  background-color: var(--color_5); 
+  
+  border: 4px solid var(--color_1); 
+}
+
 @media (min-width: 1200px) {
   .intro_leyenda_1{
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    border: none;
-    padding:70px 150px 70px 350px;
-    column-gap: 200px;
+    padding: 70px; 
+    column-gap: 50px;
   } 
 
   .intro_leyenda_1_titulo{
@@ -1668,16 +1884,12 @@ line-height: normal;
   .textos_leyenda_1_frase{
     align-items: flex-start; 
     
-    /* 2. TEXTO: Asegura que los párrafos internos se alineen a la izquierda */
     text-align: left;
     
-    /* 3. ESPACIO: Define exactamente 20px a la izquierda */
     padding-left: 20px; 
     
-    /* Mantiene el padding derecho o lo ajusta según necesites */
     padding-right: 20px; 
     
-    /* 4. ANCHO: Fundamental. Rompe cualquier ancho fijo anterior para usar toda la pantalla */
     width: 100%; 
     box-sizing: border-box;
   }
@@ -1696,10 +1908,6 @@ line-height: normal;
 
  
 }
-  .textos_leyenda_1_descripcion{}
-  .textos_leyenda_1_resumen{}
-  .textos_leyenda_1_audio{}
-
 
   .datos_leyenda_1{
     display: grid;
@@ -1722,29 +1930,19 @@ line-height: normal;
   }
 
   .botones_leyenda_1{
-    width: 100%;  /* Anula los 360px del móvil */
-    max-width: 1500px; /* Opcional: Para que no se estire infinitamente en pantallas ultra anchas */
-    margin: 0 auto; /* Centra el contenedor si es menor a la pantalla */
-    
-    /* Cambiamos la orientación para manejar el espacio horizontalmente */
+    width: 100%;  
+    max-width: 1500px; 
+    margin: 0 auto; 
     flex-direction: row; 
-    
-    /* Esta es la clave: empuja todo el contenido a la derecha */
     justify-content: flex-end; 
-    
-    /* El espacio de 20px entre el botón y el borde de la pantalla */
     padding-right: 75px; 
     padding-bottom: 50px;
-    
-    /* Asegura que el padding no sume al ancho total y cause scroll horizontal */
     box-sizing: border-box;
   }
   .botones_leyenda_1_siguiente{
     
-   margin-left: 0; 
+    margin-left: 0; 
     margin-right: 0;
-    
-    /* Quitamos cualquier padding extra que conflictúe */
     padding: 0;
   }
   .btn_desbloquear{
@@ -1752,9 +1950,87 @@ line-height: normal;
   }
 
 }
-@media (min-width: 768px) {}
-@media (min-width: 1024px) {}
-@media (min-width: 1600px) {}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1024px) {
+  .intro_leyenda_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    padding:70px 70px 70px 70px;
+    column-gap: 200px;
+  } 
+
+  .intro_leyenda_1_titulo{
+    grid-row:1 / 2 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_subtitulo{
+    grid-row:2 / 3 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_texto{
+    grid-row:3 / 4 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_imag{
+    grid-row:1 / 5 ;
+    grid-column: 2 / 3;
+  }
+}
+@media (min-width: 1600px) {
+  .intro_leyenda_1{
+    padding: 70px 150px; 
+    column-gap: 100px;
+  } 
+
+  .intro_leyenda_1_titulo{
+    grid-row:1 / 2 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_subtitulo{
+    grid-row:2 / 3 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_texto{
+    grid-row:3 / 4 ;
+    grid-column: 1 / 2;
+  }
+  .intro_leyenda_1_imag{
+    grid-row:1 / 5 ;
+    grid-column: 2 / 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .preguntas_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 90%; 
+    max-width: 1000px; 
+    height: auto;
+    padding: 40px 20px;
+    margin: 0 auto; 
+    border-radius: 20px;
+    background-color: var(--color_1);
+  }
+  .contenedor_opciones {
+    background-color: var(--color_4);
+    border-radius: 15px;
+    padding: 20px 40px;
+    
+    
+    width: 100%;
+    max-width: 350px; 
+    margin: 20px auto 0 auto; 
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 /*FIN CONTENIDOS LEYENDAS*/
 
 /* INICIO  LEYENDAS Y MITOS */
